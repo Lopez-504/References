@@ -1,0 +1,405 @@
+.paper-catalogue {
+  width: 100%;
+  padding: 50px 1%;
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.catalogue-header {
+  max-width: 1400px;
+  margin: 0 auto 45px;
+}
+
+.catalogue-header h1 {
+  margin: 0 0 10px;
+  font-size: 2.5rem;
+}
+
+.catalogue-header p {
+  margin: 0;
+  color: #666;
+  font-size: 1.05rem;
+}
+
+
+/* =========================
+   LIST
+   ========================= */
+
+.papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+
+/* =========================
+   PAPER CARD
+   ========================= */
+
+.paper-card {
+  width: 100%;
+  height: 430px;
+  min-height: 0;
+
+  display: grid;
+  grid-template-columns: 340px minmax(370px, 1fr) minmax(260px, 1fr);
+
+  background: rgb(224, 249, 249);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   SUP TITLE
+   ========================= */
+
+.sup-title {
+  background: rgb(22, 22, 22);
+  margin-right: auto;
+  border-radius: 2px;
+  margin-bottom: -30px;
+}
+
+.sup-title h1 {
+  font-size: 1.3rem;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 0.05em;
+  color: #ececec;
+}
+
+/* =========================
+   FIRST PAGE
+   ========================= */
+
+.paper-first-page {
+  background: #f3f3f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+}
+
+.paper-first-page iframe {
+  display: block;
+
+  width: 100%;
+  height: 390px;
+  border-radius: 8px;
+
+  object-fit: contain;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.826);  
+}
+
+.paper-first-page img {     /*old*/
+  display: block;
+
+  width: 100%;
+  height: 390px;
+
+  object-fit: contain;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   FIGURES
+   ========================= */
+
+.paper-figures {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+
+  background: #fafafa;
+}
+
+.figure-container {
+  position: relative;
+
+  width: 100%;
+  height: 340px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper-figure {
+  max-width: 100%;
+  max-height: 100%;
+  flex-grow: 0;
+
+  object-fit: cover;
+
+  user-select: none;
+}
+
+
+/* =========================
+   ARROWS
+   ========================= */
+
+.figure-arrow {
+  position: absolute;
+
+  top: 98%;
+  transform: translateY(-40%);
+
+  width: 22px;
+  height: 22px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+
+  font-size: 18px;
+  line-height: 0px;
+
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.figure-arrow:hover {
+  background: rgba(0, 0, 0, 0.947);
+
+  transform: translateY(-50%) scale(1.08);
+}
+
+.figure-arrow-left {
+  left: 5px;
+}
+
+.figure-arrow-right {
+  right: 5px;
+}
+
+
+/* =========================
+   FIGURE DOTS
+   ========================= */
+
+.figure-indicators {
+  display: flex;
+  gap: 4px;
+
+  margin-top: 8px;
+}
+
+.figure-dot {
+  width: 8px;
+  height: 8px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #bbb;
+
+  cursor: pointer;
+}
+
+.figure-dot.active {
+  background: #0d0d0d;
+}
+
+
+/* =========================
+   INFORMATION
+   ========================= */
+
+.paper-information {
+  padding: 10px;
+
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+
+  border-left: 1px solid #ddd;
+}
+
+.paper-information h2 {
+  margin: 0 0 15px;
+
+  font-size: 1.45rem;
+  line-height: 1.3;
+  color: #333;
+}
+
+.paper-information h3 {
+  margin: 0 0 2px;
+
+  font-size: 0.9rem;
+  color: #919090;
+}
+
+.paper-authors {
+  margin: 0 0 6px;
+
+  color: #464646;
+  line-height: 1.1;
+  font-size: 0.8rem;
+
+  scrollbar-width: none;
+
+  overflow-y: auto;
+}
+
+.paper-journal {
+  margin: 0 0 14px;
+
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+/* =========================
+   CAPTION
+   ========================= */
+
+.figure-caption {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: none; 
+  
+  padding-top: 10px;
+  border-top: 1px solid #1f1f38;
+}
+
+.caption-label {
+  display: block;
+
+  margin-bottom: 2px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  color: #777;
+}
+
+.figure-caption p {
+  margin: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  font-size: 0.75rem;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+
+  color: #444;
+}
+
+
+/* =========================
+   DOI
+   ========================= */
+
+.paper-doi {
+  align-self: flex-start;
+
+  margin-top: 25px;
+  padding: 9px 16px;
+
+  border: 1px solid #333;
+  border-radius: 6px;
+
+  color: #333;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  transition: background 0.2s, color 0.2s;
+}
+
+.paper-doi:hover {
+  background: #333;
+  color: white;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1100px) {
+
+  .paper-card {
+    grid-template-columns: 220px minmax(300px, 1fr) minmax(280px, 1fr);
+  }
+
+  .paper-information {
+    padding: 25px;
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .paper-card {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .paper-information {
+    grid-column: 1 / -1;
+
+    border-left: none;
+    border-top: 1px solid #ddd;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .paper-catalogue {
+    padding: 20px 15px;
+  }
+
+  .paper-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paper-first-page img {
+    height: 400px;
+  }
+
+  .figure-container {
+    height: 300px;
+  }
+
+  .paper-information {
+    padding: 25px;
+  }
+
+}
