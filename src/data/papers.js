@@ -11,13 +11,13 @@ const papers = [
     journal: "Royal Astronomical Society",
     doi: "https://doi.org/10.1093/mnras/stac2929",
 
-    pdf: "/pdfs/Falchi-2023.pdf",
+    pdf: "pdfs/Falchi-2023.pdf",
 
-    firstPage: "/papers/example/first-page.jpg",
+    firstPage: "papers/example/first-page.jpg",
 
     figures: [
-      "/images/falchi2023fig1.png",
-      "/images/falchi2023fig2.png",
+      "images/falchi2023fig1.png",
+      "images/falchi2023fig2.png",
     ],
 
     figuresCaptions: [
@@ -39,28 +39,28 @@ const papers = [
     journal: "Elsevier",
     doi: "https://doi.org/10.1016/j.jqsrt.2023.108678",
 
-    pdf: "/pdfs/Linares-2023.pdf",
+    pdf: "pdfs/Linares-2023.pdf",
 
-    firstPage: "/papers/example/first-page.jpg",
+    firstPage: "papers/example/first-page.jpg",
 
     figures: [
-      "/images/linares2023fig1.png",
-      "/images/linares2023fig2.png",
-      "/images/linares2023fig3.png",
-      "/images/linares2023fig4.png",
-      "/images/linares2023fig5.png",
-      "/images/linares2023fig6.png",
-      "/images/linares2023fig7.png",
-      "/images/linares2023fig8.png",
-      "/images/linares2023fig9.png",
-      "/images/linares2023fig10.png",
-      "/images/linares2023fig11.png",
-      "/images/linares2023fig12.png",
-      "/images/linares2023fig13.png",
-      "/images/linares2023fig14.png",
-      "/images/linares2023fig15.png",
-      "/images/linares2023fig16.png",
-      "/images/linares2023fig17.png",
+      "images/linares2023fig1.png",
+      "images/linares2023fig2.png",
+      "images/linares2023fig3.png",
+      "images/linares2023fig4.png",
+      "images/linares2023fig5.png",
+      "images/linares2023fig6.png",
+      "images/linares2023fig7.png",
+      "images/linares2023fig8.png",
+      "images/linares2023fig9.png",
+      "images/linares2023fig10.png",
+      "images/linares2023fig11.png",
+      "images/linares2023fig12.png",
+      "images/linares2023fig13.png",
+      "images/linares2023fig14.png",
+      "images/linares2023fig15.png",
+      "images/linares2023fig16.png",
+      "images/linares2023fig17.png",
     ],
 
     figuresCaptions: [
@@ -112,20 +112,20 @@ const papers = [
     journal: "American Meteorological Society",
     doi: "https://doi.org/10.1175/JTECH-D-19-0134.s1",
 
-    pdf: "/pdfs/geoColor2020.pdf",
+    pdf: "pdfs/geoColor2020.pdf",
 
-    firstPage: "/papers/example/first-page.jpg",
+    firstPage: "papers/example/first-page.jpg",
 
     figures: [
-      "/images/geoColorfig1.png",
-      "/images/geoColorfig2.png",
-      "/images/geoColorfig3.png",
-      "/images/geoColorfig4.png",
-      "/images/geoColorfig5.png",
-      "/images/geoColorfig6.png",
-      "/images/geoColorfig7.png",
-      "/images/geoColorfig8.png",
-      "/images/geoColorfig9.png",
+      "images/geoColorfig1.png",
+      "images/geoColorfig2.png",
+      "images/geoColorfig3.png",
+      "images/geoColorfig4.png",
+      "images/geoColorfig5.png",
+      "images/geoColorfig6.png",
+      "images/geoColorfig7.png",
+      "images/geoColorfig8.png",
+      "images/geoColorfig9.png",
     ],
 
     figuresCaptions: [
