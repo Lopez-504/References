@@ -1,11 +1,18 @@
-import PapersCatalogue from './components/PapersCatalogue'
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Landing from './components/Landing';
+import PaperCatalogue from './components/PapersCatalogue';
 
-function App() {
+export default function App() {
   return (
     <>
-      <PapersCatalogue/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/light-pollution" element={<PaperCatalogue activeSection="Light pollution" />} />
+        <Route path="/wildfires" element={<PaperCatalogue activeSection="Wildfires" />} />
+        <Route path="/general-relativity" element={<PaperCatalogue activeSection="General Relativity" />} />
+      </Routes>
     </>
-  )
+  );
 }
-
-export default App

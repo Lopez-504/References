@@ -1,7 +1,7 @@
 const papers = [
   {
     id: 1,
-
+    section: "General Relativity",
     title: "Light pollution indicators for all the major astronomical observatories",
     year: '2023',
     authors: "Fabio Falchi, Felipe Ramos, Salvador Bará, Pedro Sanhueza, Marcelo Jaque Arancibia, Guillermo Damke, Pierantonio Cinzano",
@@ -29,7 +29,7 @@ const papers = [
 
   {
     id: 2,
-
+    section: "Light pollution",
     title: "Assessing light pollution in vast areas: Zenith sky brightness maps of Catalonia",
     year: '2023',
     authors: "Hector Linares, Eduard Masana, Salvador J. Ribas, Manuel García-Gil, Martin Aubé, Alejandro Sánchez de Miguel, Alexandre Simoneau",
@@ -101,6 +101,7 @@ const papers = [
   },
   {
     id: 3,
+    section: "Wildfires",
     title: "GeoColor: A Blending Technique for Satellite Imagery",
     year: '2020',
 
