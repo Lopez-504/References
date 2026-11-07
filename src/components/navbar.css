@@ -3,12 +3,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 5%;
-  background: #111;
+  border-radius: 10px;
+  box-shadow: 5px 5px #3d92e1;
+  background: #0e0245;
   color: #fff;
+  
 }
 
 .navbar-logo a {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -25,8 +28,9 @@
 .navbar-links a {
   color: #bbb;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   transition: color 0.2s;
+
 }
 
 .navbar-links a:hover {

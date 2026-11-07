@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  scrollbar-width: none;      /* not working */
 }
 
 h1,

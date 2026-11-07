@@ -1,8 +1,28 @@
 const sections = [
-  { id: 'wildfires', title: 'Wildfires', route: '/wildfires' },
-  { id: 'light-pollution', title: 'Light Pollution', route: '/light-pollution' },
-  { id: 'imagery', title: 'Imagery', route: '/imagery' },
-  { id: 'general-relativity', title: 'General Relativity', route: '/general-relativity' }
+  { 
+    id: 'wildfires', 
+    title: 'Wildfires', 
+    route: '/wildfires',
+    bg: 'References/images/coverWilfires.webp'
+  },
+  { 
+    id: 'light-pollution', 
+    title: 'Light Pollution', 
+    route: '/light-pollution',
+    bg: 'References/images/coverLightPollution.png'
+  },
+  { 
+    id: 'imagery', 
+    title: 'Imagery', 
+    route: '/imagery', 
+    bg: 'References/images/coverImagery.jpg'
+  },
+  { 
+    id: 'general-relativity', 
+    title: 'General Relativity', 
+    route: '/general-relativity', 
+    bg: 'References/images/coverGR.png'
+  }
 ];
 
 export default sections;

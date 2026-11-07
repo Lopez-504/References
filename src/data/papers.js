@@ -1,6 +1,6 @@
 const papers = [
   {
-    id: 1,
+    id: 9,
     section: "Light pollution",
     title: "Light pollution indicators for all the major astronomical observatories",
     year: '2023',
@@ -28,7 +28,7 @@ const papers = [
   },
 
   {
-    id: 2,
+    id: 10,
     section: "Light pollution",
     title: "Assessing light pollution in vast areas: Zenith sky brightness maps of Catalonia",
     year: '2023',
@@ -260,7 +260,84 @@ const papers = [
       "Flaming front modelled as four rectangular emitting surfaces (numbered 1 to 4 in the figure) to determine its view factor with respect to a target of small size within the infrastructure analysed.",
       "Satellite image of the study area, showing the location of the electrical substation (ES) analysed (a), along with a Digital Elevation Model (DEM) acquired by the ALOS satellite with a resolution of 12.5 m per pixel (b). Slope (c) and aspect (d) maps were produced with this DEM."
     ]
+  },
+  {
+    id: 1,
+    section: "Wildfires",
+    title: "The key role of extreme weather and climate change in the occurrence of exceptional fire seasons in south-central Chile",
+    year: "2024",
+    authors: [
+      "Tomás Carrasco-Escaff", 
+      "René Garreaud", 
+      "Deniz Bozkurt", 
+      "Martín Jacques-Coper", 
+      "Aníbal Pauchard"
+    ],
+    abstract: "Unprecedentedly large areas were burned during the 2016/17 and 2022/23 fire seasons in south-central Chile (34-39°S). These seasonal-aggregated values were mostly accounted for human-caused wildfires within a limited period in late January 2017 and early February 2023. In this paper, we provide a comprehensive analysis of the meteorological conditions during these events, from local to hemispheric scales, and formally assess the contribution of climate change to their occurrence. To achieve this, we gathered monthly fire data from the Chilean Forestry Corporation and daily burned area estimates from satellite sources. In-situ and gridded data provided near-surface atmospheric insights, ERA5 reanalysis helped analyze broader wildfire features, high-resolution simulations were used to obtain details of the wind field, and large-ensemble simulations allowed the assessment of climate change's impact on extreme temperatures during the fires. This study found extraordinary daily burned area values (>65,000 ha) occurring under extreme surface weather conditions (temperature, humidity, and winds), fostered by strong mid-level subsidence ahead of a ridge and downslope winds converging towards a coastal low. Daytime temperatures and the water vapor deficit reached the maximum values observed across the region, well above the previous historical records. We hypothesize that these conditions were crucial in exacerbating the spread of fire, along with longer-term atmospheric processes and other non-climatic factors such as fuel availability and increasing human-driven ignitions. Our findings further reveal that climate change has increased the probability and intensity of extremely warm temperatures in south-central Chile, underscoring anthropogenic forcing as a significant driver of the extreme fire activity in the region.",
+    journal: "Weather and Climate Extremes",
+    doi: "https://doi.org/10.1016/j.wace.2024.100716",
+    pdf: "pdfs/Carrasco-2024.pdf",
+    firstPage: "images/Carrasco-2024-first-page.jpg",
+    figures: [
+      "images/carrascoFig1.png",
+      "images/carrascoFig2.png",
+      "images/carrascoFig3.png",
+      "images/carrascoFig4.png",
+      "images/carrascoFig5.png",
+      "images/carrascoFig6.png",
+      "images/carrascoFig7.png",
+      "images/carrascoFig8.png",
+      "images/carrascoFig9.png",
+      "images/carrascoFig10.png",
+      "images/carrascoFig11.png",
+      "images/carrascoFig12.png",
+      "images/carrascoFig13.png",
+      "images/carrascoFig14.png",
+      "images/carrascoFig15.png",
+    ],
+    figuresCaptions: [
+      "(a) MODIS Aqua satellite image (corrected reflectance, bands 7-2-1) of south-central Chile on Jan 26, 2017. The polygons in violet show the area burned for three days around Jan 26, 2017. (b) The same as (a) but for Feb 03, 2023. (c) Location of the main sectors, boxes, administrative regions, and weather stations referenced in this work, including Sector Las Máquinas (SLM, upper red polygon), Sector Florida (SF, lower red polygon), Sector Tomé (ST, upper blue polygon), Sector Santa Ana (SSA, lower blue polygon), Box 1 (B1, box in fuchsia), Box 2 (B2, box in green), weather station General Freire (GF, upper black dot), General Bernardo O’Higgins (GBO, middle black dot), and María Dolores (MD, lower black dot). (d) Topography from the GTOPO30 Digital Elevation Model (~1 km spatial resolution) along with WRF inner domains defined for studying the atmospheric conditions during a week around Jan 26, 2017 (domain A), and Feb 03, 2023 (domain B).",
+
+      "(a) Time series of burned area per fire season (July–June) in south-central Chile (administrative regions from O’Higgins to La Araucanía) accord­ing to CONAF. Colors indicate the burned area in January (blue), February (red), and other months (gray). Insets indicate the percentages of total area burned in January, February, and other months during the 2016/17 and 2022/23 seasons (middle and right chart pies) and other seasons (left chart pie). (b) Time series of number of fires during January (blue) and February (red). Dashed lines indicate mean values. Fire seasons are denoted by their end year.",
+
+      "(a) Daily values of area burned in south-central Chile according to the MODIS MCD64A1 product during January–February 2017. The area burned in sector Las Máquinas, sector Florida, and the rest of the domain are shown in blue, red and gray, respectively. (b) Time series of highest daily maximum temperature in south-central Chile according to CR2Met (CR2Met Tx, red), and daily maximum temperature at weather stations General Bernardo O’Higgins (GBO Tx, blue) and General Freire (GF Tx, gray). The red square with error bars indicates the CR2Met Tx mean for January–February during 1970–2023 plus/ minus one standard deviation. (c) The same as (a) but for January–February 2023 and sectors Santa Ana and Tomé. (d) The same as (b) but for Januar­y–February 2023 and weather station María Dolores (MD) instead of GF. The locations of weather stations are indicated in Fig. 1.",
+
+      "(a) Spatial distribution of the 3-day maximum temperature around Jan 26, 2017, according to available weather stations (circles) and the CR2Met (gridded data). The polygons in black show the area burned during the three-day period. (b) The same as (a) but for a three-day period around Feb 03, 2023.",
+
+      "(a) Mean (yellow line), 95th percentile (dark red line), and maximum (dark red circles) of daily maximum temperature (Tx) during summer (Dec–Feb) at weather station General Bernardo O’Higgins (GBO; see Fig. 1) from 1970 to 2023. Green circles indicate the highest summer temperature in south-central Chile (xTx) according to the CR2Met. (b) Empirical frequency distribution of daily maximum temperature at GBO for summer days from 1970 to 2023. Summer seasons are denoted by their end year.",
+      
+      ""
+    ]
+  },
+  {
+    id: 2,
+    section: "Wildfires",
+    title: "The 2010-2015 Megadrought and its influence on the fire regime in central and south-central Chile",
+    year: "2018",
+    authors: [
+      "Mauro E. González", 
+      "Susana Gómez-González", 
+      "Antonio Lara", 
+      "René Garreaud", 
+      "Ignacio Díaz-Hormazábal"
+    ],
+    abstract: "Forest fire activity has increased in recent years in central and south-central Chile. Drought conditions have been associated with the increase of large wildfires, area burned and longer fire seasons. This study examines the influence of drought on fire regimes and discusses landscape management opportunities to decrease fire hazard. Specifically, we investigate the effect of the 2010-2015 Megadrought (MD) compared to 1990-2009 period on fire activity (fire-season length, number of fires and burned area across months, fire sizes, regions and vegetation cover types, simultaneity, and duration of fires) in central and south-central Chile (32°-39°S), using contemporary fire statistics derived from the Chilean Forest Service. For large fire events (>200 ha) the average season length increased by 67 d (44%), comparing 2010-2015 to 1990-2009. Earlier and later ignition dates resulted in extended fire seasons in MD years. During the MD, the number, area burned, simultaneity, and duration of large fires increased significantly compared to the control period, including the unprecedented occurrence of large fires during winter. The burned area in large fires increased in all vegetation types, during the MD compared to the control period, especially in the exotic plantation cover type. The regions that were most affected by fire (i.e., total area burned) during the MD were Maule, Bío-Bío, and Araucanía (35-39°S) that concentrate >75% of forest plantations in Chile. Although both maximum temperatures and precipitation are drivers of fire activity, a simple attribution analysis indicates that the sustained rainfall deficit during 2010-2015 was the most critical factor in the enhanced fire activity. Future climate change predictions indicate more recurrent, intense, and temporally extended droughts for central and south-central Chile. Under this scenario, land-use planning and fire and forest management strategies must promote a more diverse and less flammable landscape mosaic limiting high load, homogenous, and continuous exotic plantations.",
+    journal: "Ecosphere",
+    doi: "https://doi.org/10.1002/ecs2.2300",
+    pdf: "pdfs/Gonzalez-2018.pdf",
+    firstPage: "images/Gonzalez-2018-first-page.jpg",
+    figures: [
+      "images/GonzalezFig1.png",
+      "images/GonzalezFig2.png",
+      "images/GonzalezFig3.png"
+    ],
+    figuresCaptions: [
+      "(a) Annual mean rainfall (mm); (b) geographical distribution of the main land cover types in south-central Chile; (c) total number of fires per grid-cell (5x5 km; Projection system WGS84 UTM 19S) during the period 1985-2015; (d) annual rainfall anomalies during the Megadrought (2010-2015) as a percentage of the historical norm (1980-2009).",
+      "Fire-season length for large fires (>200 ha) in central and south-central Chile (from Valparaíso to Araucanía regions). The period of Megadrought (2010-2015; gray shading) compared with the previous 20 yr (1990-2009).",
+      "Mean monthly distribution of (a) number of fires and (b) burned area, both for large fires (>200 ha) from Valparaíso to Araucanía regions."
+    ]
   }
+
 ]
 
 export default papers;
