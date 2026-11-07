@@ -1,7 +1,7 @@
 const papers = [
   {
     id: 1,
-    section: "General Relativity",
+    section: "Light pollution",
     title: "Light pollution indicators for all the major astronomical observatories",
     year: '2023',
     authors: "Fabio Falchi, Felipe Ramos, Salvador Bará, Pedro Sanhueza, Marcelo Jaque Arancibia, Guillermo Damke, Pierantonio Cinzano",
@@ -101,7 +101,7 @@ const papers = [
   },
   {
     id: 3,
-    section: "Wildfires",
+    section: "Imagery",
     title: "GeoColor: A Blending Technique for Satellite Imagery",
     year: '2020',
 
@@ -149,9 +149,118 @@ const papers = [
       "Example of feature imprinting upon GOES-16 ABI GeoColor V2.0 imagery from 2156 UTC 10 Apr 2019. A lofted dust signal, based on the spectral difference between the 10 and 12 mm, is normalized and used to modulate the RGB color components of the GeoColor image in a nonuniform way, imparting a yellow tonality to regions of high dust confidence (see text for details)."
     ]
   },
-
-  
-
-];
+  {
+    id: 4,
+    section: "Wildfires",
+    title: "Estimation of Forest Fire Danger by Using Fire Weather Index in the CORDEX MENA Region",
+    year: "2026",
+    authors: "Burcu CALDA, Kamil Collu, Nazan An, Mustafa Tufan Turp, Mehmet Levent Kurnaz",
+    abstract: "Forest fires constitute a natural element of Mediterranean ecosystems. Nevertheless, over the past decade, rising temperatures and aridification associated with climate change in the Mediterranean Basin are anticipated to intensify meteorological conditions that promote wildfires. Consequently, forecasting fire danger in this region using fire indices is essential for implementing appropriate precautions. This study used projected changes for 2070-2099, relative to the 1981-2000 reference period, to evaluate forest fire danger using the Canadian Fire Weather Index (FWI) in the Mediterranean region and Turkey, a subset of the MENA domain. The analysis incorporated RCP4.5 and RCP8.5 (IPCC) output scenarios from the MPI-ESM-MR and HadGEM2-ES global models, which were dynamically downscaled to 50 km resolution for the CORDEX-MENA domain using RegCM4. Observational data from ERA-Interim, provided by ECMWF and covering the period 1981-2000, were also utilized to evaluate model performance. The MPI-ESM-MR model outputs showed fire-danger predictions that more closely aligned with the reforecast of observational data (ERA-Interim). Therefore, the MPI-ESM-MR model may be more appropriate for estimating fire danger levels utilizing the FWI. The most significant projected increases in future fire danger are anticipated over the Iberian Peninsula, Southern Europe, and parts of Turkey, particularly under the high-emission RCP8.5 scenario. These findings underscore the growing vulnerability of Mediterranean ecosystems to future climate change and accentuate the importance of regional wildfire adaptation and mitigation strategies. Based on future projections, forest fire danger intensity is expected to rise considerably across the region during the last three decades of this century.",
+    journal: "Research Square",
+    doi: "https://doi.org/10.21203/rs.3.rs-10754082/v1",
+    pdf: "pdfs/Calda-2026.pdf",
+    firstPage: "images/Calda-2026-first-page.jpg",
+    figures: [
+      "images/Calda-2026-fig1.png",
+      "images/Calda-2026-fig2.png",
+      "images/Calda-2026-fig3.png",
+      "images/Calda-2026-fig4.png"
+    ],
+    figuresCaptions: [
+      "Subdomains used in the study. Forest areas are shown in green.",
+      "(a) The mean fire season (MJJASO) FWI using the ERA-Interim observational dataset for the period 1981-2000. (b) The mean fire season FWI using hindcast regional downscaling of the MPI-ESM-MR global model for the period 1981-2000. (c) The mean fire season FWI using hindcast regional downscaling of the HadGEM2-ES global model for the period 1981-2000.",
+      "The mean fire season future FWI forecast (MJJASO, 2070-2099) using MPI-ESM-MR model with RCP4.5 (a) and RCP8.5 (b) emission scenarios. The mean fire season future FWI forecast (MJJASO, 2070-2099) using HadGEM2-ES model with RCP4.5 (c) and RCP8.5(d) emission scenarios.",
+      "The difference of the output of the mean fire season FWI by MPI-ESM-MR model (2070-2099) with RCP4.5 (a) and RCP 8.5 (b) emission scenarios from the mean past fire season FWI output using MPI-ESM-MR model (1981-2000). The difference of the output of the mean fire season FWI by HadGEM2-ES model (2070-2099) with RCP4.5 (c) and RCP 8.5 (d) emission scenarios from the mean past fire season FWI output using HadGEM2-ES model (1981-2000)."
+    ]
+  },
+  {
+    id: 5,
+    section: "Wildfires",
+    title: "Calibration of the Fire Weather Index over Mediterranean Europe based on fire activity retrieved from MSG satellite imagery",
+    year: "2014",
+    authors: "Carlos C. DaCamara, Teresa J. Calado, Sofia L. Ermida, Isabel F. Trigo, Malik Amraoui, Kamil F. Turkman",
+    abstract: "Here we present a procedure that allows the operational generation of daily maps of fire danger over Mediterranean Europe. These are based on integrated use of vegetation cover maps, weather data and fire activity as detected by remote sensing from space. The study covers the period of July–August 2007 to 2009. It is demonstrated that statistical models based on two-parameter generalised Pareto (GP) distributions adequately fit the observed samples of fire duration and that these models are significantly improved when the Fire Weather Index (FWI), which rates fire danger, is integrated as a covariate of scale parameters of GP distributions. Probabilities of fire duration exceeding specified thresholds are then used to calibrate FWI leading to the definition of five classes of fire danger. Fire duration is estimated on the basis of 15-min data provided by Meteosat Second Generation (MSG) satellites and corresponds to the total number of hours in which fire activity is detected in a single MSG pixel during one day. Considering all observed fire events with duration above 1 h, the relative number of events steeply increases with classes of increasing fire danger and no fire activity was recorded in the class of low danger. Defined classes of fire danger provide useful information for wildfire management and are based on the Fire Risk Mapping product that is being disseminated on a daily basis by the EUMETSAT Satellite Application Facility on Land Surface Analysis.",
+    journal: "International Journal of Wildland Fire",
+    doi: "http://dx.doi.org/10.1071/WF13157",
+    pdf: "pdfs/DaCamara-2014.pdf",
+    firstPage: "images/DaCamara-2014-first-page.jpg",
+    figures: [
+      "images/DaCamara-2014-fig1.png",
+      "images/DaCamara-2014-fig2.png",
+      "images/DaCamara-2014-fig3.png"
+    ],
+    figuresCaptions: [
+      "Geographical distribution of the three main vegetation types as derived from GLC2000.",
+      "Geographical distribution of events with fire duration ≥ 3 h recorded during July-August 2007 to 2009. Each panel is restricted to events in one main vegetation type, namely forests (upper panel), shrublands (middle panel) and cultivated areas (bottom panel). The spatial distribution of each vegetation type is shown in dark grey and the year of occurrence of each event is identified by the colour of the dots.",
+      "Probability plots for fitted generalised Pareto models for forest (left panel), shrubland (middle panel) and cultivated area models (right panel). Each plot represents fitted model quantiles (x-axis) v. sample data quantiles (y-axis)."
+    ]
+  },
+  {
+    id: 6,
+    section: "Wildfires",
+    title: "Wildfire risk in a changing climate: Evaluating fire weather indices and their global patterns with CMIP6 multi-model projections",
+    year: "2025",
+    authors: "Yan He, Zixuan Zhou, Eun-Soon Im, Hyun-Han Kwon",
+    abstract: "This study investigates potential wildfire risks across different global warming scenarios through a comparative analysis of two prominent fire weather indices: the McArthur Forest Fire Danger Index (FFDI) and the Canadian Forest Fire Danger Index (FWI), leveraging the latest multi-model projections from the 6th phase of the Coupled Model Intercomparison Project (CMIP6). Utilizing the Extreme Gradient Boosting (XGBoost) algorithm and the Shapley value, we identify the impacts of meteorological variables on fire weather danger as represented by FFDI and FWI. Our findings reveal that under the Shared Socioeconomic Pathways (SSP) 5-8.5 high-emission scenario, both FFDI and FWI project significant intensification of fire weather, particularly in historically recognized high-risk hotspots, demonstrating robust inter-model consistency. Notably, the future projections of FFDI indicate the likely occurrence of wildfires with unprecedented severity. The comparative analysis using Shapley values highlights substantial regional and index-specific variations in the contribution of meteorological input variables to fire weather simulations. While these global patterns are generally retained as global warming leads to a systematic reinforcement of all variables, in-depth regional scale analyses further uncover a stark contrast of dominant factors controlling FFDI and FWI. These findings stimulate discussion on the potential adaptability and discrepancies of empirically derived fire models, highlighting the need for future research to advance fire weather modeling with enhanced flexibility and multi-factor consideration.",
+    journal: "Weather and Climate Extremes",
+    doi: "https://doi.org/10.1016/j.wace.2025.100751",
+    pdf: "pdfs/He-2025.pdf",
+    firstPage: "images/He-2025-first-page.jpg",
+    figures: [
+      "images/He-2025-fig1.png",
+      "images/He-2025-fig2.png",
+      "images/He-2025-fig3.png"
+    ],
+    figuresCaptions: [
+      "Global distributions of FFDI and FWI above their 95th percentiles during the historical period (1976-2005) based on the EFFIS reanalysis data (a, d), the CMIP6 ensemble simulations (b, e), and the absolute differences between the two (c, f).",
+      "Taylor diagrams of FFDI (a) and FWI (b) above their 95th percentiles during the historical period (1976-2005) based on selected CMIP6 models and their ensemble mean.",
+      "Projected changes in ensemble mean of FFDI (a, b) and FWI (c, d) under the SSP126 and SSP585 scenarios (2070-2099) with respect to the historical baseline (1976-2005). Areas where at least 10 out of 12 models agree on the direction of change (positive or negative) and the variations have passed the Student's t-test for statistical significance are highlighted with stippling."
+    ]
+  },
+  {
+    id: 7,
+    section: "Wildfires",
+    title: "Assessing the performance of fire danger indexes in a Mediterranean area",
+    year: "2018",
+    authors: "Costantino Sirca, Michele Salis, Bachisio Arca, Pierpaolo Duce, Donatella Spano",
+    abstract: "The fire danger (FD) defines the conditions less or more favourable for a fire ignition success and its propagation. FD indexes, that integrates environmental variables related to FD in more or less complex equations and systems, are widely used in wildfire prone countries for both scientific and operational purposes. Assessing the performance of FD indexes is challenging and this issue is quite debated within the fire community, which has been trying to apply several methodologies to evaluate FD indexes. The main aim of this work is to give a contribution to this effort. The analysis was conducted using data from a fire-prone Mediterranean area (Sardinia island, Italy), where 8 FD indexes were evaluated and compared using different statistical approaches. We calculated the daily FD values for the period 2000-2007 over the study area. A set of statistical tools (namely Spearman rank correlation, Index Value Distribution and Percentile Analysis, and Logistic Regression) were applied to evaluate the performance of each FD index by comparing FD values with fire occurrence indicators. The statistical tests revealed a large variability in FD indexes performance, depending also on fire activity conditions. Our results showed that two of the tested FD indexes reached a good overall performance. Findings from this study can help both the scientific community and local fire managers, supporting the evaluation of early warning systems and fire prevention strategies in the Mediterranean Basin.",
+    journal: "iForest - Biogeosciences and Forestry",
+    doi: "https://doi.org/10.3832/ifor2679-011",
+    pdf: "pdfs/Sirca-2018.pdf",
+    firstPage: "images/Sirca-2018-first-page.jpg",
+    figures: [
+      "images/Sirca-2018-fig1.png",
+      "images/Sirca-2018-fig2.png",
+      "images/Sirca-2018-fig3.png"
+    ],
+    figuresCaptions: [
+      "Location of the study area (Sardinia, Italy) in the Mediterranean Basin. The fire ignition points of the period 2000-2007 are reported in the figure on the right.",
+      "Climatic areas of Sardinia (here numbered from 1 to 7). Triangles indicate the location of the 48 weather stations used in this study.",
+      "Mean daily values of the fire danger indexes within the climatic area n. 3, along with observed fire number and burned area (BA) for the study period 2000-2007."
+    ]
+  },
+  {
+    id: 8,
+    section: "Wildfires",
+    title: "Assessing wildfire risk to critical infrastructure in central Chile: application to an electrical substation",
+    year: "2024",
+    authors: "Gonzalo Severino, Andrés Fuentes, Alejandro Valdivia, Fernando Auat-Cheein, Pedro Reszka",
+    abstract: "Background. Wildfires have caused significant damage in Chile, with critical infrastructure being vulnerable to extreme wildfires. Aim. This work describes a methodology for estimating wildfire risk that was applied to an electrical substation in the wildland-urban interface (WUI) of Valparaíso, Chile. Methods. Wildfire risk is defined as the product between the probability of a wildfire reaching infrastructure at the WUI and its consequences or impacts. The former is determined with event trees combined with modelled burn probability. Wildfire consequence is considered as the ignition probability of a proxy fuel within the substation, as a function of the incident heat flux using a probit expression derived from experimental data. The heat flux is estimated using modelled fire intensity and geometry and a corresponding view factor from an assumed solid flame. Key results. The probability of normal and extreme fires reaching the WUI is of the order of 10^-4 and 10^-6 events/year, respectively. Total wildfire risk is of the order of 10^-5 to 10^-4 events/year. Conclusions. This methodology offers a comprehensive interpretation of wildfire risk that considers both wildfire likelihood and consequences. Implications. The methodology is an interesting tool for quantitatively assessing wildfire risk of critical infrastructure and risk mitigation measures.",
+    journal: "International Journal of Wildland Fire",
+    doi: "https://doi.org/10.1071/WF22113",
+    pdf: "pdfs/Severino-2024.pdf",
+    firstPage: "images/Severino-2024-first-page.jpg",
+    figures: [
+      "images/Severino-2024-fig1.png",
+      "images/Severino-2024-fig2.png",
+      "images/Severino-2024-fig3.png"
+    ],
+    figuresCaptions: [
+      "Flowchart illustrating the methodology implemented in this work to analyse the risk posed by wildfires to critical infrastructure.",
+      "Flaming front modelled as four rectangular emitting surfaces (numbered 1 to 4 in the figure) to determine its view factor with respect to a target of small size within the infrastructure analysed.",
+      "Satellite image of the study area, showing the location of the electrical substation (ES) analysed (a), along with a Digital Elevation Model (DEM) acquired by the ALOS satellite with a resolution of 12.5 m per pixel (b). Slope (c) and aspect (d) maps were produced with this DEM."
+    ]
+  }
+]
 
 export default papers;

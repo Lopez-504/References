@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">References (Beta Testing)</Link>
+        <Link to="/">References (Beta)</Link>
       </div>
       <ul className="navbar-links">
         {sections.map(sec => (

@@ -1,19 +1,19 @@
 import { useState } from "react";
-import papers from "../data/papers"; //[cite: 3]
-import "./papersCatalogue.css"; //[cite: 3]
+import papers from "../data/papers"; 
+import "./papersCatalogue.css"; 
 
-function PaperCard({ paper }) { //[cite: 3]
-  const [currentFigure, setCurrentFigure] = useState(0); //[cite: 3]
+function PaperCard({ paper }) { 
+  const [currentFigure, setCurrentFigure] = useState(0); 
 
-  const nextFigure = () => { //[cite: 3]
+  const nextFigure = () => { 
     setCurrentFigure((prev) =>
-      prev === paper.figures.length - 1 ? 0 : prev + 1 //[cite: 3]
+      prev === paper.figures.length - 1 ? 0 : prev + 1 
     );
   };
 
-  const previousFigure = () => { //[cite: 3]
+  const previousFigure = () => { 
     setCurrentFigure((prev) =>
-      prev === 0 ? paper.figures.length - 1 : prev - 1 //[cite: 3]
+      prev === 0 ? paper.figures.length - 1 : prev - 1 
     );
   };
 
@@ -34,19 +34,19 @@ function PaperCard({ paper }) { //[cite: 3]
         <div className="figure-container">
           <button
             className="figure-arrow figure-arrow-left"
-            onClick={previousFigure} //[cite: 3]
+            onClick={previousFigure} 
             aria-label="Previous figure"
           >
             ‹
           </button>
           <img
-            src={paper.figures[currentFigure]} //[cite: 3]
-            alt={`Figure ${currentFigure + 1} from ${paper.title}`} //[cite: 3]
+            src={paper.figures[currentFigure]} 
+            alt={`Figure ${currentFigure + 1} from ${paper.title}`} 
             className="paper-figure"
           />
           <button
             className="figure-arrow figure-arrow-right"
-            onClick={nextFigure} //[cite: 3]
+            onClick={nextFigure} 
             aria-label="Next figure"
           >
             ›
@@ -54,14 +54,14 @@ function PaperCard({ paper }) { //[cite: 3]
         </div>
 
         <div className="figure-indicators">
-          {paper.figures.map((_, index) => ( //[cite: 3]
+          {paper.figures.map((_, index) => ( 
             <button
-              key={index} //[cite: 3]
+              key={index} 
               className={`figure-dot ${
-                index === currentFigure ? "active" : "" //[cite: 3]
+                index === currentFigure ? "active" : "" 
               }`}
-              onClick={() => setCurrentFigure(index)} //[cite: 3]
-              aria-label={`Show figure ${index + 1}`} //[cite: 3]
+              onClick={() => setCurrentFigure(index)} 
+              aria-label={`Show figure ${index + 1}`} 
             />
           ))}
         </div>
@@ -103,8 +103,8 @@ export default function PaperCatalogue({ activeSection }) {
       <div className="papers-list">
         {filteredPapers.map((paper) => (
           <PaperCard
-            key={paper.id} //[cite: 3]
-            paper={paper} //[cite: 3]
+            key={paper.id} 
+            paper={paper} 
           />
         ))}
       </div>
