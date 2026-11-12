@@ -156,7 +156,7 @@ export default function PaperCatalogue({ activeSection }) {
     <section className="paper-catalogue">
       <div className="catalogue-header">
         <h1>{activeSection} Papers</h1>
-        <p>Explore scientific papers through their figures, results, and original sources.</p>
+        <p>Explore scientific papers through their figures and original sources. Click the paper's title to open the PDF!</p>
       </div>
 
       <div className="papers-list">

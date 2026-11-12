@@ -161,10 +161,9 @@ const papers = [
     pdf: "pdfs/Calda-2026.pdf",
     firstPage: "images/Calda-2026-first-page.jpg",
     figures: [
-      "images/Calda-2026-fig1.png",
-      "images/Calda-2026-fig2.png",
-      "images/Calda-2026-fig3.png",
-      "images/Calda-2026-fig4.png"
+      "images/caldaTab1.png",
+      "images/caldaTab2.png",
+      "images/caldaTab3.png",
     ],
     figuresCaptions: [
       "Subdomains used in the study. Forest areas are shown in green.",
@@ -251,14 +250,46 @@ const papers = [
     pdf: "pdfs/Severino-2024.pdf",
     firstPage: "images/Severino-2024-first-page.jpg",
     figures: [
-      "images/Severino-2024-fig1.png",
-      "images/Severino-2024-fig2.png",
-      "images/Severino-2024-fig3.png"
+      "images/severinoFig1.png",
+      "images/severinoFig2.png",
+      "images/severinoFig3.png",
+      "images/severinoFig4.png",
+      "images/severinoFig5.png",
+      "images/severinoFig6.png",
+      "images/severinoFig7.png",
+      "images/severinoTab1.png",
+      "images/severinoFig8.png",
+      "images/severinoFig9.png",
+      "images/severinoFig10.png",
+      "images/severinoFig11.png",
+      "images/severinoTab2.png",
     ],
     figuresCaptions: [
-      "Flowchart illustrating the methodology implemented in this work to analyse the risk posed by wildfires to critical infrastructure.",
-      "Flaming front modelled as four rectangular emitting surfaces (numbered 1 to 4 in the figure) to determine its view factor with respect to a target of small size within the infrastructure analysed.",
-      "Satellite image of the study area, showing the location of the electrical substation (ES) analysed (a), along with a Digital Elevation Model (DEM) acquired by the ALOS satellite with a resolution of 12.5 m per pixel (b). Slope (c) and aspect (d) maps were produced with this DEM."
+      "Flowchart illustrating the methodology implemented in this work to analyse the risk posed by wildfires to critical infrastructure. The first step is system definition and hazard identification. The inputs are represented by white blocks. The main components of the methodology and the intermediate calculations are represented by violet and grey blocks, respectively. The risk components are the likelihood of a fire reaching the infrastructure and the consequences of a fire that has already reached it. The output is wildfire risk.",
+      
+      "Flaming front modelled as four rectangular emitting surfaces (numbered 1 to 4 in the figure) to determine its view factor with respect to a target of small size within the infrastructure analysed. The target unit normal vector points perpendicularly to the common vertex of the rectangles. The parameters required are flame length (H), flame width (b), the horizontal distance where the target is located with respect to the emitting surface (y = b/2) and the distance between the target and the surface (x).",
+      
+      "Satellite image of the study area, showing the location of the electrical substation (ES) analysed (a), along with a Digital Elevation Model (DEM) acquired by the ALOS satellite with a resolution of 12.5 m per pixel (b). Slope (c) and aspect (d) maps were produced with this DEM. The orientation and scale shown in Fig. 3a are the same as for all the images showing the study area in this document.",
+      
+      "Histograms of temperature (a) and wind velocity (Ws) (b), along with a wind rose (c), produced from hourly data recorded by a weather station (WMO code: 85560) located near the study area for the entire year 2020.",
+      
+      "Spatial fuel distribution in the study area. Two distributions are considered: a simplified one consisting only of an urban area and wildland (a), and a more detailed distribution determined from a subdivision made by the Chilean Forest Service, CONAF (b). Colours represent the fuel models assigned: urban/developed (light grey), agricultural (dark grey), water (blue), moderate load, dry climate grass–shrub (brown), very high load, humid climate shrub (dark red), and moderate load, humid climate timber–grass–shrub (green) ( Scott and Burgan 2005). The electrical substation (ES) is in the urban area in both figures.",
+      
+      "Burn probability (BP) estimated with FlamMap for the study area, considering uniform wind velocities of 5 m/s (a–d), and 25 m/s (e–h). Results with a simplified fuel distribution (a, b, e, f), and a more detailed distribution (c, d, g, h) are shown. Representative BPs in the electrical substation vicinity are calculated by taking the average of the BP curves (b, d, f, h) corresponding to the substation perimeter, giving 0.102 (b), 0.031 (d), 0.047 (f) and 0.028 (h).",
+     
+      "Fireline intensity estimated with FlamMap for the study area, considering uniform wind velocities of 5 m/s (a–d), and 25 m/s (e–h). Results with a simplified fuel distribution (a, b, e, f), and a more detailed distribution (c, d, g, h) are shown. Representative fireline intensities in the electrical substation vicinity are calculated by taking the average of the fireline intensity curves (b, d, f, h) corresponding to the substation perimeter, giving 1832 kW/m (b), 1870 kW/m (d), 65 747 kW/m (f) and 65 558 kW/m (h).",
+     
+      "Incident heat flux on a target within the electrical substation analysed, for the two fuel distributions and the two flaming fronts considered to assess exposure.",
+     
+      "Event trees developed to estimate the likelihood of a wildfire reaching the infrastructure of interest, for the simplified (a) and the detailed (b) simulated landscapes. In both cases, the initiating event is the ignition of a wildland fuel, and the first four intermediate events are having burned area, temperature and wind above historic thresholds. The fifth intermediate event is BP. Finally, the probabilities of the outcomes of interest (propagation of a normal or extreme fire to the WUI) result from multiplying the ignition frequency and the five intermediate probabilities. In these event trees, BPs are the averages in the substation perimeter, estimated in the simplified (a) and the detailed (b) simulated landscapes for the two wind conditions (average and extreme wind).",
+     
+      "Fire records analysed in this work to estimate ignition frequency and the subsequent conditionalprobability of a fire reaching the point of interest. These records correspond to fires in the Valparaíso and Viña del Mar municipalities in the 2002–2019 period: number of ignitions per year (a), histogram of burned area that resulted from these fires (b), and histograms of ambient temperature (c), and wind velocity (d) when ignitions leading to burned areas larger than 1 ha occurred.",
+     
+      "Scenarios for estimating the heat flux on a target within the electrical substation analysed. Orange indicates a wildfire engulfing the substation from all sides, whereas yellow rectangles represent two flaming fronts coming from the sides of the substation. The scale of the image is larger than that in Fig. 3.",
+     
+      "Flammability data for PMMA, compiled by Bal and Rein (2011) from several sources and analysed here for developing a vulnerability model, presented as time to ignition (in seconds) as a function of heat flux (in kW/m2) in linear (a), and log–log scales (b). From these data, a probit function is proposed (c), which serves to estimate an ignition probability curve in the critical heat flux region (d).",
+     
+      "Wildfire risk estimated for the two fuel distributions and two scenarios considered in the case study"
     ]
   },
   {
@@ -266,13 +297,7 @@ const papers = [
     section: "Wildfires",
     title: "The key role of extreme weather and climate change in the occurrence of exceptional fire seasons in south-central Chile",
     year: "2024",
-    authors: [
-      "Tomás Carrasco-Escaff", 
-      "René Garreaud", 
-      "Deniz Bozkurt", 
-      "Martín Jacques-Coper", 
-      "Aníbal Pauchard"
-    ],
+    authors: "Tomás Carrasco-Escaff, René Garreaud, Deniz Bozkurt, Martín Jacques-Coper, Aníbal Pauchard",
     abstract: "Unprecedentedly large areas were burned during the 2016/17 and 2022/23 fire seasons in south-central Chile (34-39°S). These seasonal-aggregated values were mostly accounted for human-caused wildfires within a limited period in late January 2017 and early February 2023. In this paper, we provide a comprehensive analysis of the meteorological conditions during these events, from local to hemispheric scales, and formally assess the contribution of climate change to their occurrence. To achieve this, we gathered monthly fire data from the Chilean Forestry Corporation and daily burned area estimates from satellite sources. In-situ and gridded data provided near-surface atmospheric insights, ERA5 reanalysis helped analyze broader wildfire features, high-resolution simulations were used to obtain details of the wind field, and large-ensemble simulations allowed the assessment of climate change's impact on extreme temperatures during the fires. This study found extraordinary daily burned area values (>65,000 ha) occurring under extreme surface weather conditions (temperature, humidity, and winds), fostered by strong mid-level subsidence ahead of a ridge and downslope winds converging towards a coastal low. Daytime temperatures and the water vapor deficit reached the maximum values observed across the region, well above the previous historical records. We hypothesize that these conditions were crucial in exacerbating the spread of fire, along with longer-term atmospheric processes and other non-climatic factors such as fuel availability and increasing human-driven ignitions. Our findings further reveal that climate change has increased the probability and intensity of extremely warm temperatures in south-central Chile, underscoring anthropogenic forcing as a significant driver of the extreme fire activity in the region.",
     journal: "Weather and Climate Extremes",
     doi: "https://doi.org/10.1016/j.wace.2024.100716",
@@ -306,7 +331,25 @@ const papers = [
 
       "(a) Mean (yellow line), 95th percentile (dark red line), and maximum (dark red circles) of daily maximum temperature (Tx) during summer (Dec–Feb) at weather station General Bernardo O’Higgins (GBO; see Fig. 1) from 1970 to 2023. Green circles indicate the highest summer temperature in south-central Chile (xTx) according to the CR2Met. (b) Empirical frequency distribution of daily maximum temperature at GBO for summer days from 1970 to 2023. Summer seasons are denoted by their end year.",
       
-      ""
+      "Near-surface air temperature and horizontal winds from WRF simulations for (a) Jan 26, 2017, at 10 UTC, (b) Jan 26, 2017, at 20 UTC, (c) Feb 3, 2023, at 10 UTC, and (d) Feb 3, 2023, at 20 UTC. Black dashed circles in panels (a) and (c) show the location of the main fire sectors. Black crosses indicate the sites used for the time series in Fig. 7.",
+      
+      "Time series of main near-surface meteorological variables obtained from WRF simulations near the large fire sectors (black crosses in Fig. 6) during seven days around FO17 and FO23. Panels (a) and (b) include observed surface air temperature time series (dotted lines) from nearby weather stations.",
+
+      "(a) Scatter plot between daily maximum values of near-surface temperature (Tx) and wind speed obtained from 6-hourly ERA5 summer data (period 1979–2023). Tx values were obtained using the nearest grid point to General Bernardo O’Higgins (GBO) station, while wind speed values were calculated as the spatial average value over an area near the main fire sectors (Box 2 in Fig. 1). (b) The same as in (a) but for daily maximum vapor-pressure deficit (VPD) obtained from 1-hourly ERA5 summer data (period 1979–2023) at the nearest grid point to GBO. Fuchsia lines indicate curves of constant water vapor pressure.",
+
+      "Forecast of near-surface variables at 18 UTC for a grid point close to GBO station (36.5◦ S, 72◦ W) from the Global Forecast System (GFS). (a) 2-m air temperature (◦ C) for late January 2017. (b) The same as (a) but for early February 2023. (c) 10-m wind speed (m/s) for late January 2017. (d) The same as in (c) but for early February 2023. Each row corresponds to the forecast temperature for the next 15 days (one value per day, color-coded according to the scale in panels (a) and (c)) initialized at either 06Z or 18Z. The upper row shows the observed daily maximum values obtained from hourly data at GBO station.",
+
+      "Sea level pressure (colors in hPa) and geopotential height at 500 hPa (Z500, contours in geopotential meters (gpm)) during a three-day period around January 26, 2017 (panels a–c) and February 3, 2023 (panels d–f). All fields are at 12 UTC.",
+
+      "(a) Longitude-height profile of the potential temperature difference between Jan 26, 2017 at 20 UTC and Jan 25, 2017 at 20 UTC (24-hr difference), based on WRF simulations. (b) The same as (a) but for a 24-hr difference ending on Feb 3, 2023 at 20 UTC. (c), (d), (e) and (f): Longitude-height profiles of potential temperature and vertical-zonal velocities based on WRF simulations. The nearest grid points to the specified latitudes were used, and the data were averaged over a 3-h period centered around the specified dates. Vertical velocity was scaled by a factor 50 and a gaussian filter was applied to zonal and vertical velocities before drawing the profiles. The topography is shown in brown filled contours.",
+
+      "(a) Empirical frequency distribution of 6-hourly mid-level vertical velocity (Pa/s) at 36◦ S, 72◦ W during summer according to ERA5 data from 1979 to 2023. Vertical lines in red, green and blue indicate the maximum value in a three-day period around Jan 26, 2017, Feb 2, 2019 and Feb 3, 2023, respectively. Dotted and dashed black lines correspond to the 95th and 99th percentile, respectively. (b) Histogram as in (a) but for minimum zonal wind averaged over Box 1 (38-36.5◦ S, 71.7–71.5◦ W; B1 in Fig. 1c). Vertical lines in red, green and blue indicate the minimum value in a three-day period around Jan 26, 2017, Feb 3, 2019 and Feb 3, 2023, respectively. Dotted and dashed black lines correspond to the 5th and 1st percentile, respectively. Bins containing data are displayed with a gray background for better visibility.",
+      
+      "(a) Hovmöller diagrams of potential temperature and horizontal wind near Sector Las Máquinas (black cross in Fig. 6a) during a 7-day period around FO17. (b) The same as (a) but for a point near Sector Santa Ana (black cross in Fig. 6c) during a 7-day period around FO23. The thick black lines indicate the time period spanning from the night before the fire outbreaks until the afternoon during the events.",
+
+      "Hemispheric-scale precursors of FO17 and FO23. (a) Composites of geopotential height at 500 hPa (Z500, colors in hPa) and 0.2101 sigma streamfunction (PSI200, contours every 1e7 m2/s) anomalies (with respect to 1991–2020 climatology) computed from the NCEP-NCAR Reanalysis 1 for a 7-day period including FO17. (c) and (e) The same as (a) but for one and two weeks before the 7-day period including FO17, respectively. (b), (d) and (f) The same as (a), (c) and (e) but for FO23.",
+
+      "Changes in extreme temperature behavior due to climate change in south-central Chile. (a) Scatter plot between highest summer temperature in south-central Chile (xTx) and the smoothed GMST anomaly (with respect to 2011–2020). The gray circles represent xTx values from the CESM-LE simulation, and red circles indicate the values obtained from the CR2Met dataset. The solid blue line corresponds to the location parameter of a GMST-dependent normal distribution fitted to the CESM-LE xTx values. Dashed blue lines represent lines of constant exceedance probability according to the CESM-LE, showing that a 42 ◦ C event would be 20 times less probable in the preindustrial (PI) climate (GMST anomaly of − 1.1 ◦ C) and 7 times more probable in a future climate 2 ◦ C warmer than PI levels (PI+2 ◦ C; GMST anomaly of 0.9 ◦ C). (b) Present-day and PI distributions of xTx according to CESM-LE. Extreme warm events of return period similar to FO17 and FO23 have increased their intensity by 1.3 ◦ C due to climate change in comparison to PI intensity. (c) The same as in (b) but for future (PI+2 ◦ C) and present-day climates, showing a 1.0 ◦ C intensity increase of events of return period similar to FO17 and FO23 due to climate change.",
     ]
   },
   {
@@ -314,27 +357,44 @@ const papers = [
     section: "Wildfires",
     title: "The 2010-2015 Megadrought and its influence on the fire regime in central and south-central Chile",
     year: "2018",
-    authors: [
-      "Mauro E. González", 
-      "Susana Gómez-González", 
-      "Antonio Lara", 
-      "René Garreaud", 
-      "Ignacio Díaz-Hormazábal"
-    ],
+    authors: "Mauro E. González, Susana Gómez-González, Antonio Lara, René Garreaud, Ignacio Díaz-Hormazábal",
     abstract: "Forest fire activity has increased in recent years in central and south-central Chile. Drought conditions have been associated with the increase of large wildfires, area burned and longer fire seasons. This study examines the influence of drought on fire regimes and discusses landscape management opportunities to decrease fire hazard. Specifically, we investigate the effect of the 2010-2015 Megadrought (MD) compared to 1990-2009 period on fire activity (fire-season length, number of fires and burned area across months, fire sizes, regions and vegetation cover types, simultaneity, and duration of fires) in central and south-central Chile (32°-39°S), using contemporary fire statistics derived from the Chilean Forest Service. For large fire events (>200 ha) the average season length increased by 67 d (44%), comparing 2010-2015 to 1990-2009. Earlier and later ignition dates resulted in extended fire seasons in MD years. During the MD, the number, area burned, simultaneity, and duration of large fires increased significantly compared to the control period, including the unprecedented occurrence of large fires during winter. The burned area in large fires increased in all vegetation types, during the MD compared to the control period, especially in the exotic plantation cover type. The regions that were most affected by fire (i.e., total area burned) during the MD were Maule, Bío-Bío, and Araucanía (35-39°S) that concentrate >75% of forest plantations in Chile. Although both maximum temperatures and precipitation are drivers of fire activity, a simple attribution analysis indicates that the sustained rainfall deficit during 2010-2015 was the most critical factor in the enhanced fire activity. Future climate change predictions indicate more recurrent, intense, and temporally extended droughts for central and south-central Chile. Under this scenario, land-use planning and fire and forest management strategies must promote a more diverse and less flammable landscape mosaic limiting high load, homogenous, and continuous exotic plantations.",
     journal: "Ecosphere",
     doi: "https://doi.org/10.1002/ecs2.2300",
     pdf: "pdfs/Gonzalez-2018.pdf",
     firstPage: "images/Gonzalez-2018-first-page.jpg",
     figures: [
-      "images/GonzalezFig1.png",
-      "images/GonzalezFig2.png",
-      "images/GonzalezFig3.png"
+      "images/gonzalezFig1.1.png",
+      "images/gonzalezFig1.2.png",
+      "images/gonzalezFig2.png",
+      "images/gonzalezFig3.png",
+      "images/gonzalezFig4.png",
+      "images/gonzalezFig5.png",
+      "images/gonzalezFig6.png",
+      "images/gonzalezFig7.png",
+      "images/gonzalezFig8.png",
     ],
     figuresCaptions: [
-      "(a) Annual mean rainfall (mm); (b) geographical distribution of the main land cover types in south-central Chile; (c) total number of fires per grid-cell (5x5 km; Projection system WGS84 UTM 19S) during the period 1985-2015; (d) annual rainfall anomalies during the Megadrought (2010-2015) as a percentage of the historical norm (1980-2009).",
-      "Fire-season length for large fires (>200 ha) in central and south-central Chile (from Valparaíso to Araucanía regions). The period of Megadrought (2010-2015; gray shading) compared with the previous 20 yr (1990-2009).",
-      "Mean monthly distribution of (a) number of fires and (b) burned area, both for large fires (>200 ha) from Valparaíso to Araucanía regions."
+      "(a) Annual mean rainfall (mm); (b) geographical distribution of the main land cover types in south-central Chile; (c) total number of ﬁres per grid-cell (5 9 5 km; Projection system WGS84 UTM 19S) during the period 1985–2015; (d) annual rainfall anomalies during the Megadrought (2010–2015) as a percentage of the historical norm (1980–2009). The administrative regions considered in the study indicated in c: Valparaíso (V), Metropolitana (M), O0 Higgins (VI), Maule (VII), Bío-Bío (VIII), and Araucanía (IX).",
+
+      "(a) Annual mean rainfall (mm); (b) geographical distribution of the main land cover types in south-central Chile; (c) total number of ﬁres per grid-cell (5 9 5 km; Projection system WGS84 UTM 19S) during the period 1985–2015; (d) annual rainfall anomalies during the Megadrought (2010–2015) as a percentage of the historical norm (1980–2009). The administrative regions considered in the study indicated in c: Valparaíso (V), Metropolitana (M), O0 Higgins (VI), Maule (VII), Bío-Bío (VIII), and Araucanía (IX).",
+
+      "Fire-season length for large ﬁres (>200 ha) in central and south-central Chile (from Valparaíso to Araucanía regions). The period of Megadrought (2010–2015; gray shading) compared with the previous 20 yr (1990–2009). Segmented lines indicate the average start and end of the ﬁre season for the period 1990–2009 (start: day 142 corresponds to the third week of November; end: day 293 corresponds to the third week of April). In the Y axis, the day = 0 (ﬁrst day of the ﬁre season) starts 1st of July and the day = 365 (last day of the ﬁre season of the following year) is 30th of June. X axis indicates the year of the end of the season (e.g., 2015 corresponds to the ﬁre season 2014–2015).",
+
+      "Mean monthly distribution of (a) number of ﬁres and (b) burned area, both for large ﬁres (>200 ha) from Valparaíso to Araucanía regions. Megadrought period (2010–2015; black bars) is compared with the control period (1990–2009; gray bars). Lines on bars indicate standard errors. Statistically signiﬁcant differences between study periods (P < 0.05) using t or U tests are indicated by asterisks.", 
+      
+      "Mean maximum number of simultaneous ﬁres per month for (a) all ﬁres and (b) large ﬁres (>200 ha). Black bars represent the mean values for the Megadrought period (2010–2015) and gray bars are the mean for the control period (1990–2009). Lines on bars indicate standard errors. Statistically signiﬁcant differences between study periods (P < 0.05) using t or U tests are indicated by asterisks.",
+
+      "Mean duration of (a) all ﬁres and (b) large ﬁres (>200 ha) in each season. For large ﬁres (b), only data for summer and fall seasons were available (Methods). Lines on bars indicate standard errors. Statistically signiﬁcant differences between study periods (P < 0.05) using t or U tests are indicated by asterisks.",
+
+      "Mean number of ﬁres and burned area per year for different ﬁre size classes (a, c) and for large ﬁres (>200 ha, b, d). Black bars represent the mean values for the Megadrought period (2010–2015), and gray bars are the mean for the control period (1990–2009). Lines on bars indicate standard errors. Statistically signiﬁcant differences between study periods (P < 0.05) using t or U tests are indicated by asterisks.",
+
+      "Average total burned area for large ﬁres (>200 ha) per region (left column) and for all combined regions (right column) by different vegetation cover types. Black bars correspond to the Megadrought period (2010–2015) and gray bars to the control period (1990–2009). All vegetation covers (a, b); native forest (c, d); plantation (e, f); shrubland (g, h); pasture (i, j). Lines on bars indicate standard errors. Statistically signiﬁcant differences between study periods (P < 0.05) using t or U tests are indicated by asterisks. Regions: Valparaíso (V), Metropolitana (RM), O0 Higgins (VI), Maule (VII), Bío-Bío (VIII), and Araucanía (IX).",
+
+      "Scatter plot of the total area burned (TAB) and the maximum temperature index in central-south Chile (See section Attribution analysis for the deﬁnition of the variables). Each circle represents one ﬁre season, from 1976/1977 to 2014/2015, colored according to the rainfall anomaly during the simultaneous year. The horizontal (vertical) gray bar indicates the interquartile range of the TAB (maximum temperature); the horizontal (vertical) gray dashed line indicates the median of the TAB (maximum temperature). The horizontal, dashed orange line indicates the average TAB during the Megadrought (MD) period, and the individual values are highlighted. The inset to the left shows the climate-congruent TAB during the MD period obtained from linear regressions with the maximum temperature index (Tx), rainfall anomalies (aP), and both variables (All). The predictions (horizontal lines) are obtained by plugging in the MD average values. The boxes indicate the 95% conﬁdence level of each prediction.",
+
+      "",
+     
     ]
   }
 
