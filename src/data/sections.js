@@ -22,6 +22,12 @@ const sections = [
     title: 'General Relativity', 
     route: '/general-relativity', 
     bg: 'images/coverGR.png'
+  },
+  { 
+    id: 'machine-learning', 
+    title: 'Machine Learning', 
+    route: '/machine-learning', 
+    bg: 'images/coverML.jpg'
   }
 ];
 

@@ -63,7 +63,7 @@
    ========================= */
 
 .sup-title {
-  background: rgb(8, 7, 7);
+  background: rgb(1, 3, 83);
   margin-right: auto;
   border-radius: 6px;
   margin-bottom: -30px;
@@ -496,4 +496,111 @@
   .zoom-arrow-left { left: 10px; }
   .zoom-arrow-right { right: 10px; }
   .zoom-close { top: 10px; right: 10px; }
+}
+
+
+/* =========================
+   NOTES VARIANT LAYOUT
+   ========================= */
+
+.paper-card--notes {
+  grid-template-columns: 340px 1fr;
+}
+
+.paper-notes-wrapper {
+  padding: 16px 22px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.notes-header {
+  flex-shrink: 0;
+}
+
+.notes-header .paper-journal {
+  margin-bottom: 12px;
+}
+
+.paper-notes-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-top: 12px;
+  padding-right: 8px;
+  border-top: 1px solid #1f1f38;
+
+  /* Two-column grid for the note sections on wide screens */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px 24px;
+  align-content: start;
+}
+
+/* Custom subtle scrollbar for notes */
+.paper-notes-content::-webkit-scrollbar {
+  width: 6px;
+}
+.paper-notes-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.note-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-section .caption-label {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.note-section ul {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.note-section li {
+  font-size: 1.02rem;
+  line-height: 1.45;
+  color: #1a1a1a;
+}
+
+/* =========================
+   RESPONSIVE ADJUSTMENTS
+   ========================= */
+
+@media (max-width: 1100px) {
+  .paper-card--notes {
+    grid-template-columns: 220px 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .paper-card--notes {
+    grid-template-columns: 200px 1fr;
+  }
+  
+  .paper-card--notes .paper-notes-wrapper {
+    grid-column: auto;
+    border-left: 1px solid #ddd;
+    border-top: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .paper-card--notes {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .paper-card--notes .paper-notes-wrapper {
+    border-left: none;
+    border-top: 1px solid #ddd;
+  }
 }

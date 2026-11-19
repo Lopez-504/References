@@ -13,6 +13,7 @@ export default function App() {
         <Route path="/wildfires" element={<PaperCatalogue activeSection="Wildfires" />} />
         <Route path="/imagery" element={<PaperCatalogue activeSection="Imagery" />} />
         <Route path="/general-relativity" element={<PaperCatalogue activeSection="General Relativity" />} />
+        <Route path="/machine-learning" element={<PaperCatalogue activeSection="Machine Learning" />} />
       </Routes>
     </>
   );

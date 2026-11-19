@@ -6,8 +6,8 @@ function PaperCard({ paper }) {
   const [currentFigure, setCurrentFigure] = useState(0); 
   const [isZoomed, setIsZoomed] = useState(false);
   
-  // Ref for the modal to auto-focus it for keyboard navigation
   const modalRef = useRef(null);
+  const cardType = paper.type || "figures"; // Defaults to 'figures' for backwards compatibility
 
   const nextFigure = () => { 
     setCurrentFigure((prev) =>
@@ -21,8 +21,9 @@ function PaperCard({ paper }) {
     );
   };
 
-  // Keyboard navigation handler
   const handleKeyDown = (e) => {
+    if (cardType !== "figures") return;
+
     if (e.key === "ArrowRight") {
       e.preventDefault();
       nextFigure();
@@ -34,7 +35,6 @@ function PaperCard({ paper }) {
     }
   };
 
-  // Auto-focus the modal when it opens so keyboard arrows work immediately
   useEffect(() => {
     if (isZoomed && modalRef.current) {
       modalRef.current.focus();
@@ -50,85 +50,119 @@ function PaperCard({ paper }) {
           </a>
         </h1>
       </div>
-      <article className="paper-card">
-        {/* FIRST PAGE */}
+
+      {/* Add modifier class when type is 'notes' */}
+      <article className={`paper-card ${cardType === "notes" ? "paper-card--notes" : ""}`}>
+        
+        {/* LEFT COLUMN: FIRST PAGE PDF */}
         <div className="paper-first-page">
           <iframe src={paper.pdf} frameBorder="0" allowFullScreen={true} title={paper.title}></iframe>
         </div>
 
-        {/* FIGURE CAROUSEL */}
-        <div className="paper-figures">
-          <div 
-            className="figure-container" 
-            tabIndex="0" 
-            onKeyDown={handleKeyDown} 
-            style={{ outline: "none", position: "relative" }}
-          >
-            <button
-              className="figure-arrow figure-arrow-left"
-              onClick={previousFigure} 
-              aria-label="Previous figure"
-            >
-              ‹
-            </button>
-            <img
-              src={paper.figures[currentFigure]} 
-              alt={`Figure ${currentFigure + 1} from ${paper.title}`} 
-              className="paper-figure"
-            />
-            <button
-              className="figure-arrow figure-arrow-right"
-              onClick={nextFigure} 
-              aria-label="Next figure"
-            >
-              ›
-            </button>
-            
-            {/* ZOOM BUTTON */}
-            <button 
-              className="zoom-button" 
-              onClick={() => setIsZoomed(true)}
-              aria-label="Zoom image"
-            >
-              🔍
-            </button>
-          </div>
+        {cardType === "figures" ? (
+          <>
+            {/* MIDDLE COLUMN: FIGURE CAROUSEL */}
+            <div className="paper-figures">
+              <div 
+                className="figure-container" 
+                tabIndex="0" 
+                onKeyDown={handleKeyDown} 
+                style={{ outline: "none", position: "relative" }}
+              >
+                <button
+                  className="figure-arrow figure-arrow-left"
+                  onClick={previousFigure} 
+                  aria-label="Previous figure"
+                >
+                  ‹
+                </button>
+                <img
+                  src={paper.figures[currentFigure]} 
+                  alt={`Figure ${currentFigure + 1} from ${paper.title}`} 
+                  className="paper-figure"
+                />
+                <button
+                  className="figure-arrow figure-arrow-right"
+                  onClick={nextFigure} 
+                  aria-label="Next figure"
+                >
+                  ›
+                </button>
+                
+                <button 
+                  className="zoom-button" 
+                  onClick={() => setIsZoomed(true)}
+                  aria-label="Zoom image"
+                >
+                  🔍
+                </button>
+              </div>
 
-          <div className="figure-indicators">
-            {paper.figures.map((_, index) => ( 
-              <button
-                key={index} 
-                className={`figure-dot ${index === currentFigure ? "active" : ""}`}
-                onClick={() => setCurrentFigure(index)} 
-                aria-label={`Show figure ${index + 1}`} 
-              />
-            ))}
-          </div>
-        </div>
+              <div className="figure-indicators">
+                {paper.figures.map((_, index) => ( 
+                  <button
+                    key={index} 
+                    className={`figure-dot ${index === currentFigure ? "active" : ""}`}
+                    onClick={() => setCurrentFigure(index)} 
+                    aria-label={`Show figure ${index + 1}`} 
+                  />
+                ))}
+              </div>
+            </div>
 
-        {/* INFORMATION + CAPTION */}
-        <div className="paper-information">
-          <h2>{paper.title}</h2>   
-          <p className="paper-authors">{paper.authors}</p>
-          <p className="paper-journal">
-            <em>{paper.year} {paper.journal}</em>
-          </p>
-          <div className="figure-caption">
-            <span className="caption-label">Figure {currentFigure + 1}</span>
-            <p>{paper.figuresCaptions[currentFigure]}</p>
+            {/* RIGHT COLUMN: INFORMATION + CAPTION */}
+            <div className="paper-information">
+              <h2>{paper.title}</h2>   
+              <p className="paper-authors">
+                {Array.isArray(paper.authors) ? paper.authors.join(", ") : paper.authors}
+              </p>
+              <p className="paper-journal">
+                <em>{paper.year} {paper.journal}</em>
+              </p>
+              <div className="figure-caption">
+                <span className="caption-label">Figure {currentFigure + 1}</span>
+                <p>{paper.figuresCaptions[currentFigure]}</p>
+              </div>
+            </div>
+          </>
+        ) : (
+          /* WIDE RIGHT COLUMN: INFORMATION + STRUCTURED NOTES */
+          <div className="paper-information paper-notes-wrapper">
+            <div className="notes-header">
+              <h2>{paper.title}</h2>   
+              <p className="paper-authors">
+                {Array.isArray(paper.authors) ? paper.authors.join(", ") : paper.authors}
+              </p>
+              <p className="paper-journal">
+                <em>{paper.year} {paper.journal}</em>
+              </p>
+            </div>
+
+            <div className="paper-notes-content">
+              {paper.notes?.map((section, idx) => (
+                <div key={idx} className="note-section">
+                  <span className="caption-label">{section.subtitle}</span>
+                  <ul>
+                    {section.bullets.map((bullet, bIdx) => (
+                      <li key={bIdx}>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </article>
 
       {/* ZOOM MODAL (LIGHTBOX) */}
-      {isZoomed && (
+      {cardType === "figures" && isZoomed && (
         <div 
           className="zoom-modal" 
           onClick={() => setIsZoomed(false)}
         >
           <div 
             className="zoom-modal-content" 
-            onClick={(e) => e.stopPropagation()} /* Prevent closing when clicking inside */
+            onClick={(e) => e.stopPropagation()}
             tabIndex="-1"
             ref={modalRef}
             onKeyDown={handleKeyDown}
@@ -156,12 +190,12 @@ export default function PaperCatalogue({ activeSection }) {
     <section className="paper-catalogue">
       <div className="catalogue-header">
         <h1>{activeSection} Papers</h1>
-        <p>Explore scientific papers through their figures and original sources. Click the paper's title to open the PDF!</p>
+        <p>Explore scientific papers through their figures, notes, and original sources. Click the paper's title to open the PDF!</p>
       </div>
 
       <div className="papers-list">
         {[...filteredPapers]
-          .sort((a, b) => a.id - b.id) // Fixed syntax typo here
+          .sort((a, b) => a.id - b.id)
           .map((paper) => (
             <PaperCard key={paper.id} paper={paper} />
         ))}

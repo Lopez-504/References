@@ -8,13 +8,13 @@ export default function Navbar() {
       <div className="navbar-logo">
         <Link to="/">References (Beta)</Link>
       </div>
-      <ul className="navbar-links">
+      <ol className="navbar-links">
         {sections.map(sec => (
           <li key={sec.id}>
-            <Link to={sec.route}>{sec.title}</Link>
+            <Link to={sec.route} className='animated-underline'>{sec.title}</Link>
           </li>
         ))}
-      </ul>
+      </ol>
     </nav>
   );
 }

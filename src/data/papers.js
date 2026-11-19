@@ -396,7 +396,120 @@ const papers = [
       "",
      
     ]
-  }
+  },
+  {
+    id: 11,
+    section: "Wildfires",
+    title: "A fire danger index assessment method for short-term pre-warning of wildfires: A case study of Xiangxi, China",
+    year: "2023",
+    authors: "Changkun Chen, Tong Xu, Fenglin Sun, Dongyue Zhao",
+    abstract: "wildfire",
+    journal: "Safety Science",
+    doi: "https://doi.org/10.1016/j.ssci.2023.106287",
+    pdf: "pdfs/Chen-2023.pdf",
+    firstPage: "images/Chen-2023-first-page.jpg",
+    figures: [
+      "images/chenFig1.png",
+      "images/chenFig2.png",
+      "images/chenFig3.png",
+      "images/chenFig4.png",
+      "images/chenFig5.png",
+      "images/chenFig6.png",
+      "images/chenFig7.png",
+      "images/chenFig8.png",
+      "images/chenFig9.png",
+      "images/chenFig10.png",
+    ],
+    figuresCaptions: [
+      "Technical scheme.",
+      "Vegetable Types of Research Area (Xiangxi, China)",
+      "Triangular characteristic space between NDVI, LST and TDVI",
+      "Plot of the LST and NDVI for Xiangxi in September 2018.",
+      "Monthly NDVI variation of Xiangxi in 2014.",
+      "Average NDVI during 2014–2018.",
+      "Average TVDI during 2014–2018.",
+      "Average LST during 2014–2018.",
+      "Vegetation types of Xiangxi in 2018.",
+      "Assignment plot for various VTs.",
+      "Annual variation of yearly-averaged NDVI values",
+      "Variation of monthly-averaged NDVI values from 2014 to 2018.",
+      "Annual variation of yearly-averaged LST values.",
+      "Variation of monthly-averaged LST values from 2014 to 2018.",
+      "Annual variation of yearly-averaged TVDI values.",
+      "Variation of monthly-averaged TVDI values from 2014 to 2018.",
+      "Wildfires spots distribution map in Xiangxi from 2014 to 2018.",
+      "Wildfires danger map of Xiangxi on September 2018.",
+      "",
+
+    ]
+  },
+
+  {
+  id: 12,
+  type: "notes", // 'figures' is the default if omitted
+  section: "Wildfires",
+  title: "Paper Title new format",
+  year: "2025",
+  authors: ["Author One", "Author Two"],
+  journal: "Journal Name",
+  pdf: "",
+  notes: [
+    {
+      subtitle: "Abstract",
+      bullets: [
+        "First key takeaway from the abstract.",
+        "Second key takeaway."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Used WRF-ARW v4.3.2 at 2 km resolution.",
+        "Analyzed ERA5 reanalysis data from 1979 to 2023."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "Daily burned area exceeded 65,000 ha.",
+        "VPD reached historical maximum values."
+      ]
+    }
+  ]
+  },
+  {
+  id: 13,
+  type: "notes", // 'figures' is the default if omitted
+  section: "Machine Learning",
+  title: "Wind gust forecasting by post-processing the WRF model outputs using ANN",
+  year: "2024",
+  authors: ["Mohammad Hesam Mohammadi", "Amir Hussain Meshkatee", "Sarmad Ghader", "Majid Azadi"],
+  journal: "Dynamics of Atmospheres and Oceans",
+  pdf: "pdfs/Mohammadi-2024.pdf",
+  notes: [
+    {
+      subtitle: "Abstract",
+      bullets: [
+        "First key takeaway from the abstract.",
+        "Second key takeaway."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Used WRF-ARW v4.3.2 at 2 km resolution.",
+        "Analyzed ERA5 reanalysis data from 1979 to 2023."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "Daily burned area exceeded 65,000 ha.",
+        "VPD reached historical maximum values."
+      ]
+    }
+  ]
+  },
 
 ]
 
