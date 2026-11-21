@@ -1,7 +1,9 @@
 const papers = [
+
+// ----   Light pollution  ---- //
   {
     id: 9,
-    section: "Light pollution",
+    section: "Light Pollution",
     title: "Light pollution indicators for all the major astronomical observatories",
     year: '2023',
     authors: "Fabio Falchi, Felipe Ramos, Salvador Bará, Pedro Sanhueza, Marcelo Jaque Arancibia, Guillermo Damke, Pierantonio Cinzano",
@@ -26,10 +28,9 @@ const papers = [
       "Calculated Johnson V average radiance at 30◦ above the horizon as a ratio over an assumed background of 21.8 mag arcsec⁻² . The first group represents the potential sites, the second a selection of amateur sites, the third all the major observatories, and the fourth a selection of historic observatories sites. The red line indicates the 10 per cent increase above the assumed natural level.",
     ]
   },
-
   {
     id: 10,
-    section: "Light pollution",
+    section: "Light Pollution",
     title: "Assessing light pollution in vast areas: Zenith sky brightness maps of Catalonia",
     year: '2023',
     authors: "Hector Linares, Eduard Masana, Salvador J. Ribas, Manuel García-Gil, Martin Aubé, Alejandro Sánchez de Miguel, Alexandre Simoneau",
@@ -100,6 +101,88 @@ const papers = [
     ]
   },
   {
+    id: 14,
+    section: "Light Pollution",
+    type: "notes",
+    title: "Toward a Spectrophotometric Characterization of the Chilean Night Sky. A First Quantitative Assessment of ALAN across the Coquimbo Region",
+    year: '2024',
+    authors: "Rodolfo Angeloni, Juan Pablo Uchima-Tamayo, Marcelo Jaque Arancibia, Roque Ruiz-Carmona, Diego Fernández Olivares, Pedro Sanhueza, Guillermo Damke, Ricardo Moyano, Verónica Firpo , Javier Fuentes, Javier Sayago",
+    abstract:"",
+
+    journal: "The Astronomical Journal",
+    doi: "https://doi.org/10.3847/1538-3881/ad165c",
+
+    pdf: "pdfs/Angeloni-2024.pdf",
+
+    firstPage: "papers/example/first-page.jpg",
+
+    notes: [
+    {
+      subtitle: "Abstract",
+      bullets: [
+        "First key takeaway from the abstract.",
+        "Second key takeaway."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Used WRF-ARW v4.3.2 at 2 km resolution.",
+        "Analyzed ERA5 reanalysis data from 1979 to 2023."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "Daily burned area exceeded 65,000 ha.",
+        "VPD reached historical maximum values."
+      ]
+    }
+    ]
+  },
+  {
+    id: 15,
+    section: "Light Pollution",
+    type: "notes",
+    title: "Aerosol optical depth (AOD) and Ångström exponent of aerosols observed by the Chinese Sun Hazemeter Network from August 2004 to September 2005",
+    year: '2007',
+    authors: "Jinyuan Xin, Yuesi Wang, Zhanqing Li, Pucai Wang, Wei Min Hao, Bryce L. Nordgren, Shigong Wang, Guangren Liu, Lili Wang, Tianxue Wen, Yang Sun, Bo Hu",
+    abstract:"",
+
+    journal: "JOURNAL OF GEOPHYSICAL RESEARCH",
+    doi: "https://doi.org/10.1029/2006JD007075",
+
+    pdf: "pdfs/Xin-2007.pdf",
+
+    firstPage: "papers/example/first-page.jpg",
+
+    notes: [
+    {
+      subtitle: "Abstract",
+      bullets: [
+        "First key takeaway from the abstract.",
+        "Second key takeaway."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Used WRF-ARW v4.3.2 at 2 km resolution.",
+        "Analyzed ERA5 reanalysis data from 1979 to 2023."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "Daily burned area exceeded 65,000 ha.",
+        "VPD reached historical maximum values."
+      ]
+    }
+    ]
+  },
+
+// ----  Imagery  ---- //
+  {
     id: 3,
     section: "Imagery",
     title: "GeoColor: A Blending Technique for Satellite Imagery",
@@ -149,13 +232,61 @@ const papers = [
       "Example of feature imprinting upon GOES-16 ABI GeoColor V2.0 imagery from 2156 UTC 10 Apr 2019. A lofted dust signal, based on the spectral difference between the 10 and 12 mm, is normalized and used to modulate the RGB color components of the GeoColor image in a nonuniform way, imparting a yellow tonality to regions of high dust confidence (see text for details)."
     ]
   },
+  
+// ----  General Relativity  ---- //
+
+  {
+    id: 3,
+    section: "General Relativity",
+    type: "notes",
+    title: "Structure formation and quasispherical collapse from initial curvature perturbations with numerical relativity simulations",
+    year: '2023',
+
+    //Turn this into a list
+    authors: "Robyn L. Munoz, Marco Bruni",
+    abstract:"",
+
+    journal: "Physical Review",
+    doi: "https://doi.org/10.1103/PhysRevD.107.123536",
+
+    pdf: "pdfs/Munoz-2023.pdf",
+
+    firstPage: "papers/example/first-page.jpg",
+    notes: [
+    {
+      subtitle: "Abstract",
+      bullets: [
+        "First key takeaway from the abstract.",
+        "Second key takeaway."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "ph1",
+        "ph2"
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "ph1",
+        "ph2"
+      ]
+    }
+    ]
+  },
+
+// ----  Wildfires  ---- //
+
   {
     id: 4,
     section: "Wildfires",
+    type: "notes",
     title: "Estimation of Forest Fire Danger by Using Fire Weather Index in the CORDEX MENA Region",
     year: "2026",
     authors: "Burcu CALDA, Kamil Collu, Nazan An, Mustafa Tufan Turp, Mehmet Levent Kurnaz",
-    abstract: "Forest fires constitute a natural element of Mediterranean ecosystems. Nevertheless, over the past decade, rising temperatures and aridification associated with climate change in the Mediterranean Basin are anticipated to intensify meteorological conditions that promote wildfires. Consequently, forecasting fire danger in this region using fire indices is essential for implementing appropriate precautions. This study used projected changes for 2070-2099, relative to the 1981-2000 reference period, to evaluate forest fire danger using the Canadian Fire Weather Index (FWI) in the Mediterranean region and Turkey, a subset of the MENA domain. The analysis incorporated RCP4.5 and RCP8.5 (IPCC) output scenarios from the MPI-ESM-MR and HadGEM2-ES global models, which were dynamically downscaled to 50 km resolution for the CORDEX-MENA domain using RegCM4. Observational data from ERA-Interim, provided by ECMWF and covering the period 1981-2000, were also utilized to evaluate model performance. The MPI-ESM-MR model outputs showed fire-danger predictions that more closely aligned with the reforecast of observational data (ERA-Interim). Therefore, the MPI-ESM-MR model may be more appropriate for estimating fire danger levels utilizing the FWI. The most significant projected increases in future fire danger are anticipated over the Iberian Peninsula, Southern Europe, and parts of Turkey, particularly under the high-emission RCP8.5 scenario. These findings underscore the growing vulnerability of Mediterranean ecosystems to future climate change and accentuate the importance of regional wildfire adaptation and mitigation strategies. Based on future projections, forest fire danger intensity is expected to rise considerably across the region during the last three decades of this century.",
+    abstract: "",
     journal: "Research Square",
     doi: "https://doi.org/10.21203/rs.3.rs-10754082/v1",
     pdf: "pdfs/Calda-2026.pdf",
@@ -166,19 +297,44 @@ const papers = [
       "images/caldaTab3.png",
     ],
     figuresCaptions: [
-      "Subdomains used in the study. Forest areas are shown in green.",
-      "(a) The mean fire season (MJJASO) FWI using the ERA-Interim observational dataset for the period 1981-2000. (b) The mean fire season FWI using hindcast regional downscaling of the MPI-ESM-MR global model for the period 1981-2000. (c) The mean fire season FWI using hindcast regional downscaling of the HadGEM2-ES global model for the period 1981-2000.",
-      "The mean fire season future FWI forecast (MJJASO, 2070-2099) using MPI-ESM-MR model with RCP4.5 (a) and RCP8.5 (b) emission scenarios. The mean fire season future FWI forecast (MJJASO, 2070-2099) using HadGEM2-ES model with RCP4.5 (c) and RCP8.5(d) emission scenarios.",
+      "EFFIS classification thresholds used to evaluate fire danger levels based on the Canadian Fire Weather Index (FWI)",
+      "Descriptive stats, Wilcoxon test results, and EFFIS danger class shifts for each scenario (n = 1,991 land grid cells). ΔFWI = future minus baseline. % Area ↑ = grid cells with ΔFWI > 0. P-values one-sided (future > historical). Cohen's d vs ERA-Interim.",
+      "Mean fire-season FWI values (MJJASO) for the five subdomains during the historical period (1981–2000) and future period (2070–2099) under RCP4.5 and RCP8.5 scenarios, including the percentage increase in projected fire danger.",
+      "Subdomains used in the study. Forest areas are shown in green",
+      "(a) The mean fire season (MJJASO) FWI using the ERA-Interim observational dataset for the period 1981–2000. (b) The mean fire season FWI using hindcast regional downscaling of the MPI-ESM-MR global model for the period 1981–2000. (c) The mean fire season FWI using hindcast regional downscaling of the HadGEM2-ES global model for the period 1981–2000.",
+      "The mean fire season future FWI forecast (MJJASO, 2070–2099) using MPI-ESM-MR model with RCP4.5 (a) and RCP8.5 (b) emission scenarios. The mean fire season future FWI forecast (MJJASO, 2070–2099) using HadGEM2-ES model with RCP4.5 (c) and RCP8.5(d) emission scenarios.",
       "The difference of the output of the mean fire season FWI by MPI-ESM-MR model (2070-2099) with RCP4.5 (a) and RCP 8.5 (b) emission scenarios from the mean past fire season FWI output using MPI-ESM-MR model (1981-2000). The difference of the output of the mean fire season FWI by HadGEM2-ES model (2070-2099) with RCP4.5 (c) and RCP 8.5 (d) emission scenarios from the mean past fire season FWI output using HadGEM2-ES model (1981-2000)."
+    ],
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Estimate future forest fire danger in the CORDEX-MENA (Middle East/North Africa/Mediterranean) region using **Canadian FWI**."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Dynamically downscaled global models using the regional RegCM4 model at a **50 km** resolution under **RCP4.5 and RCP8.5 scenarios**. Used the EFFIS system's thresholds to classify FD levels. Evaluated model performance against **ERA-Interim reanalysis** data."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "The MPI-ESM-MR downscaling strongly aligned with historical ERA-Interim reanalysis patterns.",
+        "Projected severe FD increases for the Mediterranean by 2070–2099."
+      ]
+    }
     ]
   },
   {
     id: 5,
     section: "Wildfires",
+    type: "notes",
     title: "Calibration of the Fire Weather Index over Mediterranean Europe based on fire activity retrieved from MSG satellite imagery",
     year: "2014",
     authors: "Carlos C. DaCamara, Teresa J. Calado, Sofia L. Ermida, Isabel F. Trigo, Malik Amraoui, Kamil F. Turkman",
-    abstract: "Here we present a procedure that allows the operational generation of daily maps of fire danger over Mediterranean Europe. These are based on integrated use of vegetation cover maps, weather data and fire activity as detected by remote sensing from space. The study covers the period of July–August 2007 to 2009. It is demonstrated that statistical models based on two-parameter generalised Pareto (GP) distributions adequately fit the observed samples of fire duration and that these models are significantly improved when the Fire Weather Index (FWI), which rates fire danger, is integrated as a covariate of scale parameters of GP distributions. Probabilities of fire duration exceeding specified thresholds are then used to calibrate FWI leading to the definition of five classes of fire danger. Fire duration is estimated on the basis of 15-min data provided by Meteosat Second Generation (MSG) satellites and corresponds to the total number of hours in which fire activity is detected in a single MSG pixel during one day. Considering all observed fire events with duration above 1 h, the relative number of events steeply increases with classes of increasing fire danger and no fire activity was recorded in the class of low danger. Defined classes of fire danger provide useful information for wildfire management and are based on the Fire Risk Mapping product that is being disseminated on a daily basis by the EUMETSAT Satellite Application Facility on Land Surface Analysis.",
+    abstract: "",
     journal: "International Journal of Wildland Fire",
     doi: "http://dx.doi.org/10.1071/WF13157",
     pdf: "pdfs/DaCamara-2014.pdf",
@@ -192,15 +348,38 @@ const papers = [
       "Geographical distribution of the three main vegetation types as derived from GLC2000.",
       "Geographical distribution of events with fire duration ≥ 3 h recorded during July-August 2007 to 2009. Each panel is restricted to events in one main vegetation type, namely forests (upper panel), shrublands (middle panel) and cultivated areas (bottom panel). The spatial distribution of each vegetation type is shown in dark grey and the year of occurrence of each event is identified by the colour of the dots.",
       "Probability plots for fitted generalised Pareto models for forest (left panel), shrubland (middle panel) and cultivated area models (right panel). Each plot represents fitted model quantiles (x-axis) v. sample data quantiles (y-axis)."
+    ],
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Operationally calibrate the Canadian FWI for Mediterranean Europe using active fire data retrieved from space."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Correlated daily ECMWF-derived FWI anomalies with real-time active fire duration data extracted from 15-minute **Meteosat Second Generation** (MSG) satellite imagery. **Modeled the statistical distribution of fire duration exceedances** using the Peaks Over Threshold (POT) approach with Generalized Pareto (GP) distributions. **FWI anomalies** were incorporated as a covariate of the scale parameter."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "The GP distribution accurately modeled long-tailed fire durations. ",
+        "By extracting probabilities of fire duration exceeding 3 hours, they defined statistically rigorous breakpoints to **classify meteorological danger into five operational FD classes** (Low to Extreme)."
+      ]
+    }
     ]
+
   },
   {
     id: 6,
     section: "Wildfires",
+    type: "notes",
     title: "Wildfire risk in a changing climate: Evaluating fire weather indices and their global patterns with CMIP6 multi-model projections",
     year: "2025",
     authors: "Yan He, Zixuan Zhou, Eun-Soon Im, Hyun-Han Kwon",
-    abstract: "This study investigates potential wildfire risks across different global warming scenarios through a comparative analysis of two prominent fire weather indices: the McArthur Forest Fire Danger Index (FFDI) and the Canadian Forest Fire Danger Index (FWI), leveraging the latest multi-model projections from the 6th phase of the Coupled Model Intercomparison Project (CMIP6). Utilizing the Extreme Gradient Boosting (XGBoost) algorithm and the Shapley value, we identify the impacts of meteorological variables on fire weather danger as represented by FFDI and FWI. Our findings reveal that under the Shared Socioeconomic Pathways (SSP) 5-8.5 high-emission scenario, both FFDI and FWI project significant intensification of fire weather, particularly in historically recognized high-risk hotspots, demonstrating robust inter-model consistency. Notably, the future projections of FFDI indicate the likely occurrence of wildfires with unprecedented severity. The comparative analysis using Shapley values highlights substantial regional and index-specific variations in the contribution of meteorological input variables to fire weather simulations. While these global patterns are generally retained as global warming leads to a systematic reinforcement of all variables, in-depth regional scale analyses further uncover a stark contrast of dominant factors controlling FFDI and FWI. These findings stimulate discussion on the potential adaptability and discrepancies of empirically derived fire models, highlighting the need for future research to advance fire weather modeling with enhanced flexibility and multi-factor consideration.",
+    abstract: "",
     journal: "Weather and Climate Extremes",
     doi: "https://doi.org/10.1016/j.wace.2025.100751",
     pdf: "pdfs/He-2025.pdf",
@@ -214,11 +393,34 @@ const papers = [
       "Global distributions of FFDI and FWI above their 95th percentiles during the historical period (1976-2005) based on the EFFIS reanalysis data (a, d), the CMIP6 ensemble simulations (b, e), and the absolute differences between the two (c, f).",
       "Taylor diagrams of FFDI (a) and FWI (b) above their 95th percentiles during the historical period (1976-2005) based on selected CMIP6 models and their ensemble mean.",
       "Projected changes in ensemble mean of FFDI (a, b) and FWI (c, d) under the SSP126 and SSP585 scenarios (2070-2099) with respect to the historical baseline (1976-2005). Areas where at least 10 out of 12 models agree on the direction of change (positive or negative) and the variations have passed the Student's t-test for statistical significance are highlighted with stippling."
-    ]
+    ],
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Evaluate global wildfire risk under **CMIP6 warming scenarios** (SSP1-2.6 vs SSP5-8.5) and decompose the sensitivity of two dominant indices (**FWI** and **McArthur FFDI**) to weather variables."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Generated **historical and future FWI and FFDI** using 12 CMIP6 models. Utilized the Extreme Gradient Boosting (XGBoost) machine learning algorithm and Shapley (SHAP) additive explanations to quantify the relative contributions of maximum temperature, relative humidity, wind speed, and drought factor (precipitation)."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "FFDI and FWI weigh inputs differently. **FWI is heavily dominated by relative humidity** across all climates. In contrast, **FFDI is primarily driven by the Drought Factor** (DF) in wet/humid regions and by **maximum temperature** in dry/arid regions. ",
+        "In warmer futures, all variables enhance their contributions to fire risk, but the underlying mechanisms remain tethered to the **empirical model’s structure** and the **region's hydroclimate**."
+      ]
+    }
+  ]
+
   },
   {
     id: 7,
     section: "Wildfires",
+    type:"notes",
     title: "Assessing the performance of fire danger indexes in a Mediterranean area",
     year: "2018",
     authors: "Costantino Sirca, Michele Salis, Bachisio Arca, Pierpaolo Duce, Donatella Spano",
@@ -236,7 +438,28 @@ const papers = [
       "Location of the study area (Sardinia, Italy) in the Mediterranean Basin. The fire ignition points of the period 2000-2007 are reported in the figure on the right.",
       "Climatic areas of Sardinia (here numbered from 1 to 7). Triangles indicate the location of the 48 weather stations used in this study.",
       "Mean daily values of the fire danger indexes within the climatic area n. 3, along with observed fire number and burned area (BA) for the study period 2000-2007."
-    ]
+    ],
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Assess the performance of **8 different FD indexes** (including FWI) in Sardinia, a Mediterranean environment highly comparable to Valparaíso."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Computed daily index values for the 2000–2007 period and compared them with actual fire occurrences (days with fires, area burned, number of fires). Employed three distinct statistical approaches: **Spearman** rank correlation, **Index Value Distribution/Percentile** Analysis, and **Logistic Regression**."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "The **effectiveness of an index fluctuates significantly based on local conditions** and the specific fire parameter being modeled.",
+        "Logistic regression and percentile analysis proved highly effective for determining which index best maps to **ignition probability** and **spread potential**."
+      ]
+    }
+  ]
   },
   {
     id: 8,
@@ -295,14 +518,37 @@ const papers = [
   {
     id: 1,
     section: "Wildfires",
+    type: "figures",
     title: "The key role of extreme weather and climate change in the occurrence of exceptional fire seasons in south-central Chile",
     year: "2024",
     authors: "Tomás Carrasco-Escaff, René Garreaud, Deniz Bozkurt, Martín Jacques-Coper, Aníbal Pauchard",
-    abstract: "Unprecedentedly large areas were burned during the 2016/17 and 2022/23 fire seasons in south-central Chile (34-39°S). These seasonal-aggregated values were mostly accounted for human-caused wildfires within a limited period in late January 2017 and early February 2023. In this paper, we provide a comprehensive analysis of the meteorological conditions during these events, from local to hemispheric scales, and formally assess the contribution of climate change to their occurrence. To achieve this, we gathered monthly fire data from the Chilean Forestry Corporation and daily burned area estimates from satellite sources. In-situ and gridded data provided near-surface atmospheric insights, ERA5 reanalysis helped analyze broader wildfire features, high-resolution simulations were used to obtain details of the wind field, and large-ensemble simulations allowed the assessment of climate change's impact on extreme temperatures during the fires. This study found extraordinary daily burned area values (>65,000 ha) occurring under extreme surface weather conditions (temperature, humidity, and winds), fostered by strong mid-level subsidence ahead of a ridge and downslope winds converging towards a coastal low. Daytime temperatures and the water vapor deficit reached the maximum values observed across the region, well above the previous historical records. We hypothesize that these conditions were crucial in exacerbating the spread of fire, along with longer-term atmospheric processes and other non-climatic factors such as fuel availability and increasing human-driven ignitions. Our findings further reveal that climate change has increased the probability and intensity of extremely warm temperatures in south-central Chile, underscoring anthropogenic forcing as a significant driver of the extreme fire activity in the region.",
+    abstract: "",
     journal: "Weather and Climate Extremes",
     doi: "https://doi.org/10.1016/j.wace.2024.100716",
     pdf: "pdfs/Carrasco-2024.pdf",
     firstPage: "images/Carrasco-2024-first-page.jpg",
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Analyze the atmospheric conditions that drove the extreme fire outbreaks in south-central Chile in January 2017 (Las Máquinas) and February 2023 (Santa Ana)."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Utilized WRF model, dynamically downscaled from ERA5 reanalysis to a **2 km inner grid**, to simulate local surface winds, temperature, and humidity. Supplemented with CR2Met gridded observational data. Used the CESM Large Ensemble to attribute thermodynamic extremes to climate change"
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "The 2017 and 2023 events saw absolute record-breaking daytime temperatures (>41°C) and unprecedented **Vapor Pressure Deficits** (VPD). The massive fire spread was fundamentally **driven by extreme temperature and VPD rather than wind alone**.",
+        "WRF successfully resolved the interaction between **synoptic coastal lows** and **topographically induced Puelche** (downslope) winds, which drove aggressive lower-tropospheric drying and warming.",
+        "Direct numerical weather prediction outputs correctly anticipated extreme temperatures and wind peaks **up to a week in advance**.",
+      ]
+    }
+  ],
     figures: [
       "images/carrascoFig1.png",
       "images/carrascoFig2.png",
@@ -355,10 +601,11 @@ const papers = [
   {
     id: 2,
     section: "Wildfires",
+    type: "figures",
     title: "The 2010-2015 Megadrought and its influence on the fire regime in central and south-central Chile",
     year: "2018",
     authors: "Mauro E. González, Susana Gómez-González, Antonio Lara, René Garreaud, Ignacio Díaz-Hormazábal",
-    abstract: "Forest fire activity has increased in recent years in central and south-central Chile. Drought conditions have been associated with the increase of large wildfires, area burned and longer fire seasons. This study examines the influence of drought on fire regimes and discusses landscape management opportunities to decrease fire hazard. Specifically, we investigate the effect of the 2010-2015 Megadrought (MD) compared to 1990-2009 period on fire activity (fire-season length, number of fires and burned area across months, fire sizes, regions and vegetation cover types, simultaneity, and duration of fires) in central and south-central Chile (32°-39°S), using contemporary fire statistics derived from the Chilean Forest Service. For large fire events (>200 ha) the average season length increased by 67 d (44%), comparing 2010-2015 to 1990-2009. Earlier and later ignition dates resulted in extended fire seasons in MD years. During the MD, the number, area burned, simultaneity, and duration of large fires increased significantly compared to the control period, including the unprecedented occurrence of large fires during winter. The burned area in large fires increased in all vegetation types, during the MD compared to the control period, especially in the exotic plantation cover type. The regions that were most affected by fire (i.e., total area burned) during the MD were Maule, Bío-Bío, and Araucanía (35-39°S) that concentrate >75% of forest plantations in Chile. Although both maximum temperatures and precipitation are drivers of fire activity, a simple attribution analysis indicates that the sustained rainfall deficit during 2010-2015 was the most critical factor in the enhanced fire activity. Future climate change predictions indicate more recurrent, intense, and temporally extended droughts for central and south-central Chile. Under this scenario, land-use planning and fire and forest management strategies must promote a more diverse and less flammable landscape mosaic limiting high load, homogenous, and continuous exotic plantations.",
+    abstract: "",
     journal: "Ecosphere",
     doi: "https://doi.org/10.1002/ecs2.2300",
     pdf: "pdfs/Gonzalez-2018.pdf",
@@ -395,11 +642,34 @@ const papers = [
 
       "",
      
-    ]
+    ],
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Evaluate the impact of the 2010–2015 'Megadrought' on fire regimes in central and south-central Chile (32°S - 39°S)."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Analyzed the **CONAF fire database**, comparing 2010–2015 data against a 1990–2009 control period across different administrative regions and **vegetation types**. Applied non-parametric (Mann-Whitney U) and **t-tests** to evaluate fire season length, fire duration, simultaneity, and total area burned."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "The Megadrought **lengthened the average fire season for large fires** (>200 ha) by 67 days (a 44% increase) through earlier ignitions and later extinctions. ",
+        "Fire simultaneity and total burn duration significantly increased, with large fires occurring uncharacteristically in winter months (June/July). ",
+        "A simple attribution analysis showed that the sustained **rainfall deficit**, rather than temperature alone, was the **primary driver of escalating fire activity**."
+      ]
+    }
+  ]
   },
   {
     id: 11,
     section: "Wildfires",
+    type: "notes",
     title: "A fire danger index assessment method for short-term pre-warning of wildfires: A case study of Xiangxi, China",
     year: "2023",
     authors: "Changkun Chen, Tong Xu, Fenglin Sun, Dongyue Zhao",
@@ -441,19 +711,8 @@ const papers = [
       "Wildfires danger map of Xiangxi on September 2018.",
       "",
 
-    ]
-  },
-
-  {
-  id: 12,
-  type: "notes", // 'figures' is the default if omitted
-  section: "Wildfires",
-  title: "Paper Title new format",
-  year: "2025",
-  authors: ["Author One", "Author Two"],
-  journal: "Journal Name",
-  pdf: "",
-  notes: [
+    ],
+    notes: [
     {
       subtitle: "Abstract",
       bullets: [
@@ -464,19 +723,20 @@ const papers = [
     {
       subtitle: "Methodology",
       bullets: [
-        "Used WRF-ARW v4.3.2 at 2 km resolution.",
-        "Analyzed ERA5 reanalysis data from 1979 to 2023."
+        "ph1"
       ]
     },
     {
       subtitle: "Results",
       bullets: [
-        "Daily burned area exceeded 65,000 ha.",
-        "VPD reached historical maximum values."
+        "ph1"
       ]
     }
   ]
   },
+
+// ----  Machine Learning ---- //  
+
   {
   id: 13,
   type: "notes", // 'figures' is the default if omitted
@@ -488,24 +748,23 @@ const papers = [
   pdf: "pdfs/Mohammadi-2024.pdf",
   notes: [
     {
-      subtitle: "Abstract",
+      subtitle: "Objectives",
       bullets: [
-        "First key takeaway from the abstract.",
-        "Second key takeaway."
+        "The WRF post-process diagnostic of wind gusts (WPD method) is utilized to predict **non-convective wind gust speeds** using the **direct outputs of the WRF model**. These results were post-processed using an artificial neural network (ANN)."
       ]
     },
     {
       subtitle: "Methodology",
       bullets: [
-        "Used WRF-ARW v4.3.2 at 2 km resolution.",
-        "Analyzed ERA5 reanalysis data from 1979 to 2023."
+        "WRF + ANN + Contingency table",
+        "Multiple different ANN algorithms were examined to achieve the most accurate predictions possible. The results were evaluated using observational data extracted from **32 synoptic stations** across Iran during the time **period from 2014 to 2018**"
       ]
     },
     {
       subtitle: "Results",
       bullets: [
-        "Daily burned area exceeded 65,000 ha.",
-        "VPD reached historical maximum values."
+        "Employing hybrid structure ANN, consisting of one input layer comprising five parameters (10 m wind speed, sea level pressure, temperature, relative humidity, and predicted wind gust speed obtained from the WPD method), one hidden layer with a sigmoid activation function and 12 neurons, and using the BR (Bayesian Regularization) training algorithm, **significantly improve the accuracy of the WPD wind gust speed prediction method**.", 
+        "The RMSE for wind gust speed prediction has decreased from 3.68 m/s (WPD method) to 1.88 m/s for the **validation dataset**. Additionally, there were considerable improvements of 50%, 74%, and 17% in the MAE, MSE, and R2, respectively."
       ]
     }
   ]

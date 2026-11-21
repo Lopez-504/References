@@ -2,12 +2,26 @@ import { useState, useRef, useEffect } from "react";
 import papers from "../data/papers"; 
 import "./papersCatalogue.css"; 
 
+import FormattedText from "./FormattedText";
+
 function PaperCard({ paper }) { 
+  const hasFigures = Boolean(paper.figures && paper.figures.length > 0);
+  const hasNotes = Boolean(paper.notes && paper.notes.length > 0);
+  const canToggle = hasFigures && hasNotes;
+
+  // Default to the entry's specified type, falling back to whichever content exists
+  const initialView = paper.type || (hasFigures ? "figures" : "notes");
+  const [activeView, setActiveView] = useState(initialView);
+
   const [currentFigure, setCurrentFigure] = useState(0); 
   const [isZoomed, setIsZoomed] = useState(false);
   
   const modalRef = useRef(null);
-  const cardType = paper.type || "figures"; // Defaults to 'figures' for backwards compatibility
+
+  const toggleView = () => {
+    if (!canToggle) return;
+    setActiveView((prev) => (prev === "figures" ? "notes" : "figures"));
+  };
 
   const nextFigure = () => { 
     setCurrentFigure((prev) =>
@@ -22,7 +36,7 @@ function PaperCard({ paper }) {
   };
 
   const handleKeyDown = (e) => {
-    if (cardType !== "figures") return;
+    if (activeView !== "figures") return;
 
     if (e.key === "ArrowRight") {
       e.preventDefault();
@@ -49,17 +63,30 @@ function PaperCard({ paper }) {
             {paper.title}
           </a>
         </h1>
+        
+        <button
+          type="button"
+          className="view-toggle-btn"
+          onClick={toggleView}
+          disabled={!canToggle}
+          title={
+            !canToggle
+              ? `Only ${hasFigures ? "figures" : "notes"} available for this paper`
+              : `Switch to ${activeView === "figures" ? "notes" : "figures"}`
+          }
+        >
+          {activeView === "figures" ? "Show Notes" : "Show Figures"}
+        </button>
       </div>
 
-      {/* Add modifier class when type is 'notes' */}
-      <article className={`paper-card ${cardType === "notes" ? "paper-card--notes" : ""}`}>
+      <article className={`paper-card ${activeView === "notes" ? "paper-card--notes" : ""}`}>
         
         {/* LEFT COLUMN: FIRST PAGE PDF */}
         <div className="paper-first-page">
           <iframe src={paper.pdf} frameBorder="0" allowFullScreen={true} title={paper.title}></iframe>
         </div>
 
-        {cardType === "figures" ? (
+        {activeView === "figures" && hasFigures ? (
           <>
             {/* MIDDLE COLUMN: FIGURE CAROUSEL */}
             <div className="paper-figures">
@@ -121,7 +148,7 @@ function PaperCard({ paper }) {
               </p>
               <div className="figure-caption">
                 <span className="caption-label">Figure {currentFigure + 1}</span>
-                <p>{paper.figuresCaptions[currentFigure]}</p>
+                <p>{paper.figuresCaptions?.[currentFigure]}</p>
               </div>
             </div>
           </>
@@ -134,7 +161,7 @@ function PaperCard({ paper }) {
                 {Array.isArray(paper.authors) ? paper.authors.join(", ") : paper.authors}
               </p>
               <p className="paper-journal">
-                <em>{paper.year} {paper.journal}</em>
+                <em>{paper.year} - {paper.journal}</em>
               </p>
             </div>
 
@@ -144,7 +171,9 @@ function PaperCard({ paper }) {
                   <span className="caption-label">{section.subtitle}</span>
                   <ul>
                     {section.bullets.map((bullet, bIdx) => (
-                      <li key={bIdx}>{bullet}</li>
+                      <li key={bIdx}>
+                        <FormattedText text={bullet}/>
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -155,7 +184,7 @@ function PaperCard({ paper }) {
       </article>
 
       {/* ZOOM MODAL (LIGHTBOX) */}
-      {cardType === "figures" && isZoomed && (
+      {activeView === "figures" && hasFigures && isZoomed && (
         <div 
           className="zoom-modal" 
           onClick={() => setIsZoomed(false)}

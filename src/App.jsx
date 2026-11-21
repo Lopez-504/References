@@ -9,7 +9,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/light-pollution" element={<PaperCatalogue activeSection="Light pollution" />} />
+        <Route path="/light-pollution" element={<PaperCatalogue activeSection="Light Pollution" />} />
         <Route path="/wildfires" element={<PaperCatalogue activeSection="Wildfires" />} />
         <Route path="/imagery" element={<PaperCatalogue activeSection="Imagery" />} />
         <Route path="/general-relativity" element={<PaperCatalogue activeSection="General Relativity" />} />
