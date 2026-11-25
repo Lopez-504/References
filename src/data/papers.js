@@ -180,6 +180,134 @@ const papers = [
     }
     ]
   },
+  {
+    id: 16,
+    section: "Light Pollution",
+    type: "notes",
+    title: "Photons without borders: quantifying light pollution transfer between territories",
+    year: '2018',
+    authors: "Salvador Bará, Raul C. Lima",
+    abstract:"",
+
+    journal: "International Journal of Sustainable Lighting IJSL",
+    doi: "https://doi.org/",          //needed!
+
+    pdf: "pdfs/Bara-2018.pdf",
+
+    firstPage: "papers/example/first-page.jpg",
+
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Develop mathematical and GIS-based tools to quantify and visualize how artificial light at night (ALAN) propagates and transfers between surrounding territories (specifically municipalities) to affect local night sky brightness.",
+        "Provide quantitative support for coordinated, multi-municipal, and transnational public policy regulations on outdoor lighting."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Formulated a linear light pollution propagation framework using a continuous integral and discrete matrix approach, multiplying an artificial lights radiance matrix (L, derived from 2015 VIIRS-DNB satellite imagery) by an atmospheric Point Spread Function ($K$, modeling the all-sky average light pollution ratio, ALR) to generate a weighted lights matrix (W).",
+        "Aggregated pixel contributions by administrative boundaries (using binary mask functions) to construct an NxN **light pollution transfer matrix (M)** and its normalized percentage counterpart ($m$), quantifying both how much pollution a municipality receives from neighbors and how much it emits to others.",
+        "Applied the methodology to a case study of A Veiga (a Starlight Tourism Destination in Galicia, Spain) and its surrounding municipalities within a 300 km radius under clear-sky conditions (65 km visibility)."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "At the specific observing site of Xares (in A Veiga), local lights within A Veiga only account for **12.4%** of the total artificial skyglow (ALR); the remaining majority comes from surrounding municipalities across different regions and countries, including O Barco de Valdeorras (7.7%, Galicia), Ponferrada (7.1%, Castille-León), and Bragança (6.0%, Portugal).",
+        "When evaluating A Veiga as an entire municipality, local emissions contribute only **8.5%** of its total integrated ALR, demonstrating that distant sources significantly outweigh local ones under high-visibility atmospheric conditions (whereas under lower visibility/higher aerosol conditions of 26 km, local contributions rise to 40.3% for zenithal brightness).",
+        "Because light pollution crosses administrative and national borders, local lighting ordinances alone are often insufficient to protect dark-sky sites, requiring broad inter-municipal and transnational agreements."
+      ]
+    }
+    ]
+  },
+  {
+    id: 17,
+    section: "Light Pollution",
+    type: "notes",
+    title: "Keeping light pollution at bay: A red-lines, target values, top-down approach",
+    year: '2021',
+    authors: "Salvador Bará, Fabio Falchi, Raul C. Lima, Martin Pawley",
+    abstract:"",
+
+    journal: "Environmental Challenges 5",
+    doi: "https://doi.org/10.1016/j.envc.2021.100212", 
+
+    pdf: "pdfs/Bara-2021.pdf",
+
+    firstPage: "papers/example/first-page.jpg",
+
+    notes: [
+    {
+      subtitle: "Abstract",
+      bullets: [
+        'Address the insufficiency of traditional "bottom-up" lighting regulations (which only restrict individual lamp parameters like upward light output ratio, spectrum, or lux levels) in halting the overall growth of artificial light at night.',
+        'Propose a complementary, "top-down" immissions control framework based on setting strict quantitative **"red-lines"** (maximum allowable environmental degradation limits) or remediation **target values** to guide territorial management and emission caps.'
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        'Outlined a six-step policy and scientific workflow: (1) defining detrimental consequences, (2) selecting quantitative indicators and setting red-lines, (3) evaluating current compliance, (4) assessing preventive or remediation margins, (5) allocating emission/reduction quotas among actors using linear atmospheric propagation models (PSFs) and satellite radiance data (VIIRS-DNB), and (6) steering long-term territorial transitions.',
+        'Illustrated the framework with a case study of the Cíes Islands in the Galician Atlantic Islands Maritime-Terrestrial National Park (a Starlight Tourism Destination), using 2018 Sky Quality Meter (SQM) data from MeteoGalicia ($m_{FWHM}$ metric under no-Sun, no-Moon conditions) against the Starlight certification red-line of $21.00\text{ mag}_{SQM}/\text{arcsec}^2$.'
+
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        'The Cíes Islands recorded a nominal clear-night sky brightness of $21.06 \pm 0.03\text{ mag}_{SQM}/\text{arcsec}^2$, leaving only a narrow safety margin of $0.06\text{ mag}_{SQM}/\text{arcsec}^2$—meaning an increase of roughly **10%** in artificial sky radiance would breach the red-line and jeopardize its Starlight certification.',
+        "Spatial contribution mapping revealed that a few nearby, densely populated coastal municipalities generate the vast majority of the park's zenithal skyglow—led by Vigo (**39.82%**), Nigrán (**10.34%**), and Cangas (**9.76%**)—alongside anchored carrier ships waiting offshore.",
+        'Translating red-lines into territorial contribution maps allows policymakers to scientifically allocate strict emission caps or reduction quotas among specific municipalities, rather than relying solely on uniform, device-level lighting standards.'
+      ]
+    }
+    ]
+  },
+
+  {
+    id: 18,
+    section: "Light Pollution",
+    type: "notes",
+    title: "Skyglow inside your eyes: intraocular scattering and artificial brightness of the night sky",
+    year: '2023',
+    authors: "Salvador Bará, Carmen Bao-Varela",
+    abstract:"",
+
+    journal: "nternational Journal of Sustainable Lighting IJSL",
+    doi: "https://doi.org/",   //needed! 
+
+    pdf: "pdfs/Bara-2023.pdf",
+
+    firstPage: "papers/example/first-page.jpg",
+
+    notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        "Quantify the contribution of **intraocular light scattering** (straylight scattered within the tissues and fluids of the human eye) to the visually perceived artificial brightness of the night sky.",
+        "Compare intraocular scattering against other urban skyglow components (natural dark sky, city-wide atmospheric skyglow, and local streetlight air-column scattering) to evaluate the visual impact of nearby luminaires."
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "Used the standard CIE general glare equation and ocular scattering Point Spread Function ($\Psi(\theta)$) to calculate equivalent glare luminance ($L_{eq}$, converted to Johnson-Cousins $V$-band $\text{mag}_V/\text{arcsec}^2$) as a function of corneal illuminance ($E_{gl}$), scattering angle ($\theta$), observer age ($A$), and iris pigmentation ($p$).",
+        "Modeled an observer (40 years old, medium pigmentation $p = 0.5$) gazing at the zenith at varying horizontal distances ($D = 0\text{ to }30\text{ m}$) from an 8-meter-tall streetlight within a 5-km-radius city, summing four luminance terms: natural dark sky ($22.00\text{ mag}_V/\text{arcsec}^2$), city-wide skyglow ($17.83\text{ mag}_V/\text{arcsec}^2$), streetlight radiance scattered in the overhead air column, and intraocular scattering from the streetlight."
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "Within **~17 meters** of a streetlight, intraocular scattering is the **single dominant contributor** to perceived zenithal sky brightness, outweighing both the surrounding city's atmospheric skyglow and local air-column scattering (which drops to zero beyond $D = 23.51\text{ m}$ when the lamp's beam falls below eye level).",
+        "Intraocular scattering increases significantly with observer age (adding roughly $-1\text{ mag}_V/\text{arcsec}^2$ of perceived veil brightness for an 80-year-old compared to a 20-year-old across all angles) and is higher in lightly pigmented (blue-green) eyes at scattering angles larger than $\sim 20^\circ$.",
+        "Simply shielding the eyes from direct streetlight glare (e.g., using hands as lateral screens or improving luminaire shielding) yields substantial gains in perceived sky darkness—up to **+5 $\text{mag}_V/\text{arcsec}^2$** at 4 m from a lamp and **+1 $\text{mag}_V/\text{arcsec}^2$** at 15 m—significantly improving naked-eye limiting star magnitude, though overall sky quality remains capped by wider city skyglow."
+      ]
+    }
+    ]
+  },
+
+
 
 // ----  Imagery  ---- //
   {
@@ -234,7 +362,6 @@ const papers = [
   },
   
 // ----  General Relativity  ---- //
-
   {
     id: 3,
     section: "General Relativity",
@@ -278,7 +405,6 @@ const papers = [
   },
 
 // ----  Wildfires  ---- //
-
   {
     id: 4,
     section: "Wildfires",
@@ -736,7 +862,6 @@ const papers = [
   },
 
 // ----  Machine Learning ---- //  
-
   {
   id: 13,
   type: "notes", // 'figures' is the default if omitted
@@ -745,6 +870,7 @@ const papers = [
   year: "2024",
   authors: ["Mohammad Hesam Mohammadi", "Amir Hussain Meshkatee", "Sarmad Ghader", "Majid Azadi"],
   journal: "Dynamics of Atmospheres and Oceans",
+  doi: "https://doi.org/10.1016/j.dynatmoce.2023.101425",
   pdf: "pdfs/Mohammadi-2024.pdf",
   notes: [
     {
@@ -769,6 +895,41 @@ const papers = [
     }
   ]
   },
+
+
+// ----  Seeing  ---- //
+  {
+  id: 19,
+  type: "notes",
+  section: "Seeing",
+  title: "Seeing and Meteorological Analysis at the North-1 and North-2 Points of Muztagh-Ata Site on the Pamir Plateau",
+  year: "2025",
+  authors: "Wenbo Gu, Ali Esamdin, Cunhai Bai, Jicheng Zhang, Xuan Zhang, Guojie Feng, Letian Wang, Guangxin Pu, Xinliang Wang,Daiping Zhang",
+  journal: "-",
+  doi: "-",     //Needed!
+  pdf: "pdfs/Gu-2025.pdf",
+  notes: [
+    {
+      subtitle: "Objectives",
+      bullets: [
+        ""
+      ]
+    },
+    {
+      subtitle: "Methodology",
+      bullets: [
+        "",""
+      ]
+    },
+    {
+      subtitle: "Results",
+      bullets: [
+        "",""
+      ]
+    }
+  ]
+  },
+
 
 ]
 

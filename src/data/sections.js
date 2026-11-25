@@ -28,6 +28,12 @@ const sections = [
     title: 'Machine Learning', 
     route: '/machine-learning', 
     bg: 'images/coverML.jpg'
+  },
+  { 
+    id: 'seeing', 
+    title: 'Seeing', 
+    route: '/seeing', 
+    bg: 'images/coverSeeing.jpg'
   }
 ];
 

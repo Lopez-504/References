@@ -14,6 +14,7 @@ export default function App() {
         <Route path="/imagery" element={<PaperCatalogue activeSection="Imagery" />} />
         <Route path="/general-relativity" element={<PaperCatalogue activeSection="General Relativity" />} />
         <Route path="/machine-learning" element={<PaperCatalogue activeSection="Machine Learning" />} />
+        <Route path="/seeing" element={<PaperCatalogue activeSection="Seeing" />} />
       </Routes>
     </>
   );
